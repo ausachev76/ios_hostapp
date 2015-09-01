@@ -1,8 +1,6 @@
 #import "RootViewController.h"
 #import "xmlparser.h"
 #import "ModuleDataReceiverProtocol.h"
-#import "mEmail.h"
-#import "mTapToCall.h"
 #import "TBXML.h"
 
 @interface __REPLACE_MODULE_NAME__ViewController : UIViewController
@@ -69,7 +67,7 @@
     [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
     [_button addTarget:self
-                action:@selector(tapToEmail)
+                action:@selector(buttonClicked:)
       forControlEvents:UIControlEventTouchUpInside];
   
     [_button sizeToFit];
@@ -81,56 +79,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
   [self.navigationController setNavigationBarHidden:YES animated:NO];
-}
-
--(void)tapToEmail
-{
-  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TapToEmailConfig" ofType:@"xml"];
-  NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
-  /// check whether data loaded ?
-  if (!xmlData)
-    return;
-
-  NSMutableDictionary *emailParams = [NSMutableDictionary dictionary];
-  
-  TBXML *tbxml = [TBXML newTBXMLWithXMLData:xmlData
-                                      error:nil ];
-  
-  
-  NSValue *v = [NSValue value:[tbxml rootXMLElement] withObjCType:@encode(TBXMLElement)];
-  
-  [[mEmailViewController class] parseXML:v withParams:emailParams];
-  
-  mEmailViewController *tapToEmailVC = [[mEmailViewController alloc] initWithNibName:nil bundle:nil];
-  
-  [((UIViewController<ModuleDataReceiverProtocol> *)tapToEmailVC) setParams:emailParams];
-  
-  [tapToEmailVC performActionWithViewController:self];
-}
-
--(void)tapToCall
-{
-  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TapToCallConfig" ofType:@"xml"];
-  NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
-  /// check whether data loaded ?
-  if (!xmlData)
-    return;
-  
-  NSMutableDictionary *callParams = [NSMutableDictionary dictionary];
-  
-  TBXML *tbxml = [TBXML newTBXMLWithXMLData:xmlData
-                                      error:nil ];
-  
-  
-  NSValue *v = [NSValue value:[tbxml rootXMLElement] withObjCType:@encode(TBXMLElement)];
-  
-  [[mTapToCallViewController class] parseXML:v withParams:callParams];
-  
-  mTapToCallViewController *tapToCallVC = [[mTapToCallViewController alloc] initWithNibName:nil bundle:nil];
-  
-  [((UIViewController<ModuleDataReceiverProtocol> *)tapToCallVC) setParams:callParams];
-  
-  [tapToCallVC performActionWithViewController:self];
 }
 
 @end

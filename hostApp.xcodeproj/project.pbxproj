@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 377A285D1B95BE77009BB389 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		37B571531B95CA4100D85CC3 /* TapToEmailConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 37B571521B95CA4100D85CC3 /* TapToEmailConfig.xml */; settings = {ASSET_TAGS = (); }; };
-		37B571561B95CB3800D85CC3 /* libmEmail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B5711F1B95C93900D85CC3 /* libmEmail.a */; };
 		37B5716B1B95D03800D85CC3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B5716A1B95D03800D85CC3 /* MessageUI.framework */; };
-		37B571761B95DF0800D85CC3 /* TapToCallConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 37B571751B95DF0800D85CC3 /* TapToCallConfig.xml */; settings = {ASSET_TAGS = (); }; };
-		37B571821B95E47000D85CC3 /* libmTapToCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B5717F1B95E3BE00D85CC3 /* libmTapToCall.a */; };
 		37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B571691B95CF7200D85CC3 /* libTBXML.a */; };
 		37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B571CB1B95EF0400D85CC3 /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */; };
@@ -29,40 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		37B5711E1B95C93900D85CC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37B5711A1B95C93900D85CC3 /* mEmail.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 599425A416808409006628E6;
-			remoteInfo = mEmail;
-		};
-		37B571541B95CB2B00D85CC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37B5711A1B95C93900D85CC3 /* mEmail.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 599425A316808409006628E6;
-			remoteInfo = mEmail;
-		};
 		37B571681B95CF7200D85CC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 59030B2E16CE378D00DA0714;
 			remoteInfo = TBXML;
-		};
-		37B5717E1B95E3BE00D85CC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37B5717A1B95E3BD00D85CC3 /* mTapToCall.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 599425A416808409006628E6;
-			remoteInfo = mTapToCall;
-		};
-		37B571801B95E46800D85CC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37B5717A1B95E3BD00D85CC3 /* mTapToCall.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 599425A316808409006628E6;
-			remoteInfo = mTapToCall;
 		};
 		37B5718A1B95E5D300D85CC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -82,12 +50,8 @@
 
 /* Begin PBXFileReference section */
 		377A285D1B95BE77009BB389 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		37B5711A1B95C93900D85CC3 /* mEmail.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mEmail.xcodeproj; path = plugins/TapToEmail/mEmail.xcodeproj; sourceTree = "<group>"; };
-		37B571521B95CA4100D85CC3 /* TapToEmailConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TapToEmailConfig.xml; path = userContent/TapToEmailConfig.xml; sourceTree = SOURCE_ROOT; };
 		37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBXML.xcodeproj; path = libs/TBXML/TBXML.xcodeproj; sourceTree = SOURCE_ROOT; };
 		37B5716A1B95D03800D85CC3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		37B571751B95DF0800D85CC3 /* TapToCallConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TapToCallConfig.xml; path = userContent/TapToCallConfig.xml; sourceTree = SOURCE_ROOT; };
-		37B5717A1B95E3BD00D85CC3 /* mTapToCall.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mTapToCall.xcodeproj; path = plugins/TapToCall/mTapToCall.xcodeproj; sourceTree = "<group>"; };
 		37B571CC1B95EF0400D85CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		37B571D21B95EFCF00D85CC3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		37B571D31B95F06600D85CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -117,8 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */,
-				37B571821B95E47000D85CC3 /* libmTapToCall.a in Frameworks */,
-				37B571561B95CB3800D85CC3 /* libmEmail.a in Frameworks */,
 				5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */,
 				77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */,
 				77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */,
@@ -134,26 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */,
-				37B571741B95DE4B00D85CC3 /* TapToCall */,
-				37B571191B95C92300D85CC3 /* TapToEmail */,
 			);
 			name = plugins;
-			sourceTree = "<group>";
-		};
-		37B571191B95C92300D85CC3 /* TapToEmail */ = {
-			isa = PBXGroup;
-			children = (
-				37B5711A1B95C93900D85CC3 /* mEmail.xcodeproj */,
-			);
-			name = TapToEmail;
-			sourceTree = "<group>";
-		};
-		37B5711B1B95C93900D85CC3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				37B5711F1B95C93900D85CC3 /* libmEmail.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */ = {
@@ -180,22 +124,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37B571741B95DE4B00D85CC3 /* TapToCall */ = {
-			isa = PBXGroup;
-			children = (
-				37B5717A1B95E3BD00D85CC3 /* mTapToCall.xcodeproj */,
-			);
-			name = TapToCall;
-			sourceTree = "<group>";
-		};
-		37B5717B1B95E3BD00D85CC3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				37B5717F1B95E3BE00D85CC3 /* libmTapToCall.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		59705435159DB8080003BA92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +138,6 @@
 				377A285D1B95BE77009BB389 /* Default-568h@2x.png */,
 				59A8533C15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png */,
 				59A8533D15A1827300E83613 /* __REPLACE_MODULE_NAME__config.xml */,
-				37B571521B95CA4100D85CC3 /* TapToEmailConfig.xml */,
-				37B571751B95DF0800D85CC3 /* TapToCallConfig.xml */,
 			);
 			name = userContent;
 			sourceTree = "<group>";
@@ -289,8 +215,6 @@
 			);
 			dependencies = (
 				37B5718B1B95E5D300D85CC3 /* PBXTargetDependency */,
-				37B571811B95E46800D85CC3 /* PBXTargetDependency */,
-				37B571551B95CB2B00D85CC3 /* PBXTargetDependency */,
 			);
 			name = hostApp;
 			productName = hostApp;
@@ -323,14 +247,6 @@
 					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 				},
 				{
-					ProductGroup = 37B5711B1B95C93900D85CC3 /* Products */;
-					ProjectRef = 37B5711A1B95C93900D85CC3 /* mEmail.xcodeproj */;
-				},
-				{
-					ProductGroup = 37B5717B1B95E3BD00D85CC3 /* Products */;
-					ProjectRef = 37B5717A1B95E3BD00D85CC3 /* mTapToCall.xcodeproj */;
-				},
-				{
 					ProductGroup = 37B571651B95CF7100D85CC3 /* Products */;
 					ProjectRef = 37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */;
 				},
@@ -343,25 +259,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		37B5711F1B95C93900D85CC3 /* libmEmail.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmEmail.a;
-			remoteRef = 37B5711E1B95C93900D85CC3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		37B571691B95CF7200D85CC3 /* libTBXML.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libTBXML.a;
 			remoteRef = 37B571681B95CF7200D85CC3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		37B5717F1B95E3BE00D85CC3 /* libmTapToCall.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmTapToCall.a;
-			remoteRef = 37B5717E1B95E3BE00D85CC3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */ = {
@@ -378,11 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B571761B95DF0800D85CC3 /* TapToCallConfig.xml in Resources */,
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
 				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
 				37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */,
-				37B571531B95CA4100D85CC3 /* TapToEmailConfig.xml in Resources */,
 				59A8533E15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png in Resources */,
 				59A8533F15A1827300E83613 /* __REPLACE_MODULE_NAME__config.xml in Resources */,
 			);
@@ -405,16 +305,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37B571551B95CB2B00D85CC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = mEmail;
-			targetProxy = 37B571541B95CB2B00D85CC3 /* PBXContainerItemProxy */;
-		};
-		37B571811B95E46800D85CC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = mTapToCall;
-			targetProxy = 37B571801B95E46800D85CC3 /* PBXContainerItemProxy */;
-		};
 		37B5718B1B95E5D300D85CC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TBXML;
