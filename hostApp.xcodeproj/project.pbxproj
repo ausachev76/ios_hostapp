@@ -117,15 +117,15 @@
 		77F76132158B0B80003A4120 /* hostApp */ = {
 			isa = PBXGroup;
 			children = (
-				37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */,
-				59A8533B15A1825B00E83613 /* userContent */,
 				77F76158158B0C78003A4120 /* AppDelegate.h */,
 				77F76159158B0C78003A4120 /* AppDelegate.m */,
 				77F7615B158B0C85003A4120 /* RootViewController.h */,
 				77F7615C158B0C85003A4120 /* RootViewController.m */,
-				77F76133158B0B80003A4120 /* Supporting Files */,
 				59705457159DD3E50003BA92 /* xmlparser.h */,
 				59705458159DD3E50003BA92 /* xmlparser.m */,
+				37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */,
+				59A8533B15A1825B00E83613 /* userContent */,
+				77F76133158B0B80003A4120 /* Supporting Files */,
 			);
 			path = hostApp;
 			sourceTree = "<group>";
@@ -296,6 +296,7 @@
 		77F7614D158B0B80003A4120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer: rafael soultanov (758Q7TLRGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
@@ -317,6 +318,7 @@
 		77F7614E158B0B80003A4120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer: rafael soultanov (758Q7TLRGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";

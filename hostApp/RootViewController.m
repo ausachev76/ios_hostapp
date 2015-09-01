@@ -12,12 +12,20 @@
     __REPLACE_MODULE_NAME__ViewController *viewController = [[__REPLACE_MODULE_NAME__ViewController alloc] init];
     
     if ([viewController conformsToProtocol:@protocol(ModuleDataReceiverProtocol)])
-        [viewController setParams:params];
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention!" message:@"This module doesn't conforms to protocol ModuleDataReceiverProtocol" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];          
-		[alert show];
-		[alert release];  
+    {
+        [((UIViewController<ModuleDataReceiverProtocol> *)viewController) setParams:params];
     }
+    else
+    {
+      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention!"
+                                                      message:@"This module doesn't conforms to protocol ModuleDataReceiverProtocol"
+                                                     delegate:self
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+      [alert show];
+      [alert release];
+    }
+  
     [self.navigationController pushViewController:viewController animated:YES];
     [viewController release];
 };
@@ -39,10 +47,10 @@
     [parser parse];
 
     /// store parsed data into userdefaults database
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    [defaults setObject:[parser entries] forKey:@"__REPLACE_MODULE_NAME__"];  
+    /// NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    /// [defaults setObject:[parser entries] forKey:@"__REPLACE_MODULE_NAME__"];
     
-    // push all properties to NSMutableDicitionary "params"
+    /// push all properties to NSMutableDicitionary "params"
     params = [[NSMutableDictionary alloc] init];
     [params setValue:[parser entries] forKey:@"data"];
 

@@ -5,8 +5,10 @@
 
 - (void)viewDidLoad
 {
-    [self.navigationItem setHidesBackButton:NO animated:NO];
-    [super viewDidLoad];
+  [super viewDidLoad];
+  
+  [self.navigationItem setHidesBackButton:NO animated:NO];
+  [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -40,7 +42,7 @@
     [webView setBackgroundColor:[UIColor grayColor]];
     
     /// access to user configuration data via NSUserDefaults key-value database
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    /// NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableString *content = [[NSMutableString alloc] init];
     
     ///////////////////////////////////////////////////////////////////////////////////////////
