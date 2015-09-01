@@ -18,7 +18,7 @@
     [self.navigationItem setTitle:@"Example Module"];
     
     /// set background for view to black
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor grayColor];
     
     /// set logo from resources
     UIImage *logoImage = [UIImage imageNamed:@"__REPLACE_MODULE_NAME__logo_small.png"];
@@ -31,7 +31,11 @@
     [self.view addSubview:logoImageView];
     
     /// create WebView to store data from config
-    CGRect viewFrame = CGRectMake(0.0f, [logoImage size].height + 20, 320.0f, 440.0f - [logoImage size].height);
+    CGRect viewFrame = CGRectMake(0.0f,
+                                  [logoImage size].height + 20,
+                                  self.view.bounds.size.width,
+                                  self.view.bounds.size.height - [logoImage size].height);
+  
     UIWebView *webView = [[UIWebView alloc] initWithFrame:viewFrame];
     [webView setBackgroundColor:[UIColor grayColor]];
     

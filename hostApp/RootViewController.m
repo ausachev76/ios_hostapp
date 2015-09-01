@@ -7,7 +7,7 @@
 
 @implementation RootViewController
 
--(IBAction)_buttonClicked:(id)sender
+-(void)_buttonClicked:(id)sender
 {
     __REPLACE_MODULE_NAME__ViewController *viewController = [[__REPLACE_MODULE_NAME__ViewController alloc] init];
     
@@ -48,18 +48,20 @@
 
     [parser release];
     
-    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 
     /// prepare user interface with single button to load module
     _button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _button.frame = CGRectMake(30.0f, 172.0f, 260.0f, 60.0f);
     _button.titleLabel.font = [UIFont boldSystemFontOfSize:32]; 
 
     [_button setTitle:@"Run Module" forState:UIControlStateNormal];
-    [_button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
     [_button addTarget:self action:@selector(_buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-
+  
+    [_button sizeToFit];
+    _button.center = self.view.center;
+  
     [self.view addSubview:_button];
     }
 

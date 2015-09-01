@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 377A285D1B95BE77009BB389 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
 		5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */; };
 		59705459159DD3E50003BA92 /* xmlparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59705458159DD3E50003BA92 /* xmlparser.m */; };
 		59A8533E15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A8533C15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		377A285D1B95BE77009BB389 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleDataReceiverProtocol.h; sourceTree = SOURCE_ROOT; };
 		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = __REPLACE_MODULE_NAME__/__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
 		59705457159DD3E50003BA92 /* xmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlparser.h; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		59A8533B15A1825B00E83613 /* userContent */ = {
 			isa = PBXGroup;
 			children = (
+				377A285D1B95BE77009BB389 /* Default-568h@2x.png */,
 				59A8533C15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png */,
 				59A8533D15A1827300E83613 /* __REPLACE_MODULE_NAME__config.xml */,
 			);
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
+				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
 				59A8533E15A1827300E83613 /* __REPLACE_MODULE_NAME__logo_small.png in Resources */,
 				59A8533F15A1827300E83613 /* __REPLACE_MODULE_NAME__config.xml in Resources */,
 			);
@@ -292,16 +296,18 @@
 		77F7614D158B0B80003A4120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: rafael soultanov (758Q7TLRGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/userContent\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
 				WRAPPER_EXTENSION = app;
@@ -311,16 +317,18 @@
 		77F7614E158B0B80003A4120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: rafael soultanov (758Q7TLRGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/userContent\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
 				WRAPPER_EXTENSION = app;

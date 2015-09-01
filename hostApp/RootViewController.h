@@ -6,6 +6,6 @@
     NSMutableDictionary *params;
 }
 
--(IBAction)_buttonClicked:(id)sender;
+-(void)_buttonClicked:(id)sender;
 
 @end
