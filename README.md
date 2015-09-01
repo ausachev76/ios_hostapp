@@ -7,7 +7,8 @@ The "userContent" folder is used to store a user-generated content (images, audi
 
 To properly register your iOS Feature, the iBuildApp SDK requires that project files follow this convention:
 
-Resource file names should start with Feature ID, i.e.
+Resource file names should start with Feature ID, i.e.  
+
 _REPLACE_MODULE_NAME_logo_small.png (image resource file)
 
 _REPLACE_MODULE_NAME_appconfig.xml (XML resource file)
