@@ -1,0 +1,14 @@
+<data>
+  <title>
+    <![CDATA[ Tap To Email ]]>
+  </title>
+  <mailto>
+    <![CDATA[ your_email@mail.com ]]>
+  </mailto>
+  <subject>
+    <![CDATA[ Important notice! ]]>
+  </subject>
+  <message>
+    <![CDATA[ Hello,  ]]>
+  </message>
+</data>
