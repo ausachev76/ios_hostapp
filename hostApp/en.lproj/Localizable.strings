@@ -1,0 +1,28 @@
+/* --- core strings --- */
+
+/* Call */
+"core_callNumberAlertCallButtonTitle" = "Call";
+
+/* Cancel */
+"core_callNumberAlertCancelButtonTitle" = "Cancel";
+
+
+/* --- module eMail strings --- */
+
+/* Sending Failed - Unknown Error */
+"mEM_sendingErrorMessage" = "Sending Failed - Unknown Error";
+
+/* Email */
+"mEM_sendingErrorTitle" = "Email";
+
+/* OK */
+"mEM_sendingSErrorOkButton" = "OK";
+
+/* Thank You - your information has been sent */
+"mEM_sendingSuccessMessage" = "Thank You - your information has been sent";
+
+/* OK */
+"mEM_sendingSuccessOkButton" = "OK";
+
+/* Sent from */
+"mEM_sentFrom" = "Sent from";
