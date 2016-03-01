@@ -11,22 +11,7 @@
 -(void)buttonClicked:(id)sender
 {
     __REPLACE_MODULE_NAME__ViewController *viewController = [[__REPLACE_MODULE_NAME__ViewController alloc] init];
-    
-    if ([viewController conformsToProtocol:@protocol(ModuleDataReceiverProtocol)])
-    {
-        [((UIViewController<ModuleDataReceiverProtocol> *)viewController) setParams:params];
-    }
-    else
-    {
-      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention!"
-                                                      message:@"This module doesn't conforms to protocol ModuleDataReceiverProtocol"
-                                                     delegate:self
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-      [alert show];
-      [alert release];
-    }
-  
+    [((UIViewController<ModuleDataReceiverProtocol> *)viewController) setParams:params];
     [self.navigationController pushViewController:viewController animated:YES];
     [viewController release];
 };
@@ -36,7 +21,7 @@
     [super viewDidLoad];
 
     /// get contents of user configuration xml file
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"__REPLACE_MODULE_NAME__config" ofType:@"xml"];  
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"];
     NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
     /// check whether data loaded ?
     if (!xmlData)
@@ -50,18 +35,18 @@
     /// store parsed data into userdefaults database
     /// NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     /// [defaults setObject:[parser entries] forKey:@"__REPLACE_MODULE_NAME__"];
-    
+
     /// push all properties to NSMutableDicitionary "params"
     params = [[NSMutableDictionary alloc] init];
     [params setValue:[parser entries] forKey:@"data"];
 
     [parser release];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
 
     /// prepare user interface with single button to load module
     _button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _button.titleLabel.font = [UIFont boldSystemFontOfSize:32]; 
+    _button.titleLabel.font = [UIFont boldSystemFontOfSize:32];
 
     [_button setTitle:@"Run Module" forState:UIControlStateNormal];
     [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -69,10 +54,10 @@
     [_button addTarget:self
                 action:@selector(buttonClicked:)
       forControlEvents:UIControlEventTouchUpInside];
-  
+
     [_button sizeToFit];
     _button.center = self.view.center;
-  
+
     [self.view addSubview:_button];
 }
 
