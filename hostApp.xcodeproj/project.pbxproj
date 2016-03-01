@@ -56,7 +56,7 @@
 
 /* Begin PBXFileReference section */
 		377A285D1B95BE77009BB389 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBXML.xcodeproj; path = ../libs/TBXML/TBXML.xcodeproj; sourceTree = SOURCE_ROOT; };
+		37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBXML.xcodeproj; path = ../ios_libs/TBXML/TBXML.xcodeproj; sourceTree = SOURCE_ROOT; };
 		37B5716A1B95D03800D85CC3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		37B571CC1B95EF0400D85CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		37B571D21B95EFCF00D85CC3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -113,12 +113,12 @@
 			name = __REPLACE_MODULE_NAME__;
 			sourceTree = "<group>";
 		};
-		37B571621B95CF4100D85CC3 /* libs */ = {
+		37B571621B95CF4100D85CC3 /* ios_libs */ = {
 			isa = PBXGroup;
 			children = (
 				37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */,
 			);
-			name = libs;
+			name = ios_libs;
 			sourceTree = "<group>";
 		};
 		37B571651B95CF7100D85CC3 /* Products */ = {
@@ -185,7 +185,7 @@
 				59705457159DD3E50003BA92 /* xmlparser.h */,
 				59705458159DD3E50003BA92 /* xmlparser.m */,
 				37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */,
-				37B571621B95CF4100D85CC3 /* libs */,
+				37B571621B95CF4100D85CC3 /* ios_libs */,
 				59A8533B15A1825B00E83613 /* userContent */,
 				77F76133158B0B80003A4120 /* Supporting Files */,
 			);
@@ -412,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../libs/TBXML/TBXML-Headers/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../libs/TBXML/TBXML-Headers/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
