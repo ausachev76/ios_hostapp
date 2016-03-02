@@ -2,15 +2,16 @@
 #import "xmlparser.h"
 #import "ModuleDataReceiverProtocol.h"
 #import "TBXML.h"
+#import "appConfig.h"
 
-@interface __REPLACE_MODULE_NAME__ViewController : UIViewController
+@interface MODULE_VIEW_CONTROLLER : UIViewController
 @end
 
 @implementation RootViewController
 
 -(void)buttonClicked:(id)sender
 {
-    __REPLACE_MODULE_NAME__ViewController *viewController = [[__REPLACE_MODULE_NAME__ViewController alloc] init];
+    MODULE_VIEW_CONTROLLER *viewController = [[MODULE_VIEW_CONTROLLER alloc] init];
     [((UIViewController<ModuleDataReceiverProtocol> *)viewController) setParams:params];
     [self.navigationController pushViewController:viewController animated:YES];
     [viewController release];
