@@ -5,5 +5,4 @@
     UIButton *_button;
     NSMutableDictionary *params;
 }
-
 @end

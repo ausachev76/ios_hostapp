@@ -12,7 +12,6 @@
 		37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B571691B95CF7200D85CC3 /* libTBXML.a */; };
 		37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B571CB1B95EF0400D85CC3 /* Localizable.strings */; };
 		5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */; };
-		59705459159DD3E50003BA92 /* xmlparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59705458159DD3E50003BA92 /* xmlparser.m */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
 		77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612C158B0B80003A4120 /* UIKit.framework */; };
 		77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612E158B0B80003A4120 /* Foundation.framework */; };
@@ -63,8 +62,6 @@
 		37B571D31B95F06600D85CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleDataReceiverProtocol.h; sourceTree = SOURCE_ROOT; };
 		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = ../__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
-		59705457159DD3E50003BA92 /* xmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlparser.h; sourceTree = "<group>"; };
-		59705458159DD3E50003BA92 /* xmlparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlparser.m; sourceTree = "<group>"; };
 		5E0F35101C857E19005FE117 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = userContent/config.xml; sourceTree = SOURCE_ROOT; };
 		5EFBA90D1C86DFBD007AD042 /* appConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appConfig.h; sourceTree = "<group>"; };
 		77F76128158B0B80003A4120 /* hostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,8 +181,6 @@
 				77F76159158B0C78003A4120 /* AppDelegate.m */,
 				77F7615B158B0C85003A4120 /* RootViewController.h */,
 				77F7615C158B0C85003A4120 /* RootViewController.m */,
-				59705457159DD3E50003BA92 /* xmlparser.h */,
-				59705458159DD3E50003BA92 /* xmlparser.m */,
 				37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */,
 				37B571621B95CF4100D85CC3 /* ios_libs */,
 				59A8533B15A1825B00E83613 /* userContent */,
@@ -304,7 +299,6 @@
 				77F76139158B0B80003A4120 /* main.m in Sources */,
 				77F7615A158B0C78003A4120 /* AppDelegate.m in Sources */,
 				77F7615D158B0C85003A4120 /* RootViewController.m in Sources */,
-				59705459159DD3E50003BA92 /* xmlparser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

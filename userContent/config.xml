@@ -1,19 +1,6 @@
-<data>                                                     
-  <title><![CDATA[Services]]></title>                      
-  <content>                                                
-    <![CDATA[                                              
-      <html>
-        <head>
-        </head>
-          <body>
-            <br>xml content section 1 say: Hello world !</br>
-    ]]>                                                    
-  </content>                                               
-  <content>                                                
-    <![CDATA[
-         <br>xml content section 2 say: Hello world !</br>
-        </body>
-      </html>                                       
-    ]]>                                                    
-  </content>                                               
-</data>                                                    
+<data>
+  <title>Title</title>
+  <mailto>qwe@example.com</title>
+  <subject>qqq</title>
+  <message>www</title>
+</data>

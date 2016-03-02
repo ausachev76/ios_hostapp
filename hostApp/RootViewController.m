@@ -1,10 +1,10 @@
 #import "RootViewController.h"
-#import "xmlparser.h"
 #import "ModuleDataReceiverProtocol.h"
 #import "TBXML.h"
 #import "appConfig.h"
 
-@interface MODULE_VIEW_CONTROLLER : UIViewController
+@interface MODULE_VIEW_CONTROLLER : UIViewController <ModuleDataReceiverProtocol>
++ (void)parseXML:(NSValue *)xmlElement withParams:(NSMutableDictionary *)paramsOut;
 @end
 
 @implementation RootViewController
@@ -12,36 +12,45 @@
 -(void)buttonClicked:(id)sender
 {
     MODULE_VIEW_CONTROLLER *viewController = [[MODULE_VIEW_CONTROLLER alloc] init];
-    [((UIViewController<ModuleDataReceiverProtocol> *)viewController) setParams:params];
+    [viewController setParams:params];
     [self.navigationController pushViewController:viewController animated:YES];
     [viewController release];
 };
 
+- (void)loadModuleParams
+{
+    NSError *error = nil;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"];
+    NSString *xmlData = [NSString stringWithContentsOfFile:filePath
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+    if (error)
+    {
+        NSLog(@"%@ %@", [error localizedDescription], [error userInfo]);
+        return;
+    }
+
+    TBXML *tbxml = [TBXML newTBXMLWithXMLString:xmlData error:&error];
+    [tbxml autorelease];
+
+    if (error)
+    {
+        NSLog(@"%@ %@", [error localizedDescription], [error userInfo]);
+        return;
+    }
+
+    TBXMLElement *xmlElement = tbxml.rootXMLElement;
+    NSValue *xmlElementWrapper =
+      [NSValue valueWithBytes:xmlElement objCType:@encode(TBXMLElement)];
+
+    params = [[NSMutableDictionary alloc] init];
+    [MODULE_VIEW_CONTROLLER parseXML:xmlElementWrapper withParams:params];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    /// get contents of user configuration xml file
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"];
-    NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
-    /// check whether data loaded ?
-    if (!xmlData)
-    return;
-
-    /// init xml parser
-    TXMLParser *parser = [[TXMLParser alloc] initWithData:xmlData];
-    /// parse document
-    [parser parse];
-
-    /// store parsed data into userdefaults database
-    /// NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    /// [defaults setObject:[parser entries] forKey:@"__REPLACE_MODULE_NAME__"];
-
-    /// push all properties to NSMutableDicitionary "params"
-    params = [[NSMutableDictionary alloc] init];
-    [params setValue:[parser entries] forKey:@"data"];
-
-    [parser release];
+    [self loadModuleParams];
 
     self.view.backgroundColor = [UIColor whiteColor];
 
