@@ -9,12 +9,57 @@
 
 @implementation RootViewController
 
+- (id)createModuleViewControllerWithParent:(UIViewController *)parent
+{
+    MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
+    [viewController setParams:params];
+
+    id retActionValue = nil;
+    SEL selector = @selector(performAction);
+    if ( [viewController respondsToSelector:selector] )
+    {
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+                                                     [[viewController class] instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:viewController];
+        [invocation invoke];
+        [invocation getReturnValue:&retActionValue];
+    } else {
+        selector = @selector(performActionWithViewController:);
+        if ( [viewController respondsToSelector:selector] )
+        {
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+                                                         [[viewController class] instanceMethodSignatureForSelector:selector]];
+            [invocation setArgument:&parent atIndex:2];
+            [invocation setSelector:selector];
+            [invocation setTarget:viewController];
+            [invocation invoke];
+            [invocation getReturnValue:&retActionValue];
+            if ( !retActionValue )
+                return nil;
+        }
+    }
+
+    if ( retActionValue )
+        return retActionValue;
+
+    [viewController setModuleName:[params objectForKey:@"title"]];
+
+    return viewController;
+}
+
 -(void)buttonClicked:(id)sender
 {
-    MODULE_VIEW_CONTROLLER *viewController = [[MODULE_VIEW_CONTROLLER alloc] init];
-    [viewController setParams:params];
-    [self.navigationController pushViewController:viewController animated:YES];
-    [viewController release];
+    id obj = [self createModuleViewControllerWithParent:self];
+
+    if ( !obj )
+        return;
+
+    if ( [obj isKindOfClass:[UIViewController class]] )
+    {
+        UIViewController *vc = obj;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 };
 
 - (void)loadModuleParams
