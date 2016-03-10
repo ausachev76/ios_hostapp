@@ -13,6 +13,7 @@
 		37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B571CB1B95EF0400D85CC3 /* Localizable.strings */; };
 		5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
+		5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */; };
 		77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612C158B0B80003A4120 /* UIKit.framework */; };
 		77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612E158B0B80003A4120 /* Foundation.framework */; };
 		77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F76130158B0B80003A4120 /* CoreGraphics.framework */; };
@@ -51,6 +52,20 @@
 			remoteGlobalIDString = 599425A316808409006628E6;
 			remoteInfo = __REPLACE_MODULE_NAME__;
 		};
+		5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5ED6C5701C916B96009CA944;
+			remoteInfo = iBuildAppLib;
+		};
+		5E14C6481C9172C800FDC937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ED6C56F1C916B96009CA944;
+			remoteInfo = iBuildAppLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +78,7 @@
 		37CBA5E815C9264D0090BBFF /* ModuleDataReceiverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleDataReceiverProtocol.h; sourceTree = SOURCE_ROOT; };
 		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = ../__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
 		5E0F35101C857E19005FE117 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = userContent/config.xml; sourceTree = SOURCE_ROOT; };
+		5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iBuildAppLib.xcodeproj; path = ../../ios_libs/iBuildAppLib/iBuildAppLib.xcodeproj; sourceTree = "<group>"; };
 		5EFBA90D1C86DFBD007AD042 /* appConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appConfig.h; sourceTree = "<group>"; };
 		77F76128158B0B80003A4120 /* hostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F7612C158B0B80003A4120 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -83,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */,
 				37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */,
 				5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */,
 				77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */,
@@ -114,6 +131,7 @@
 		37B571621B95CF4100D85CC3 /* ios_libs */ = {
 			isa = PBXGroup;
 			children = (
+				5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */,
 				37B571641B95CF7100D85CC3 /* TBXML.xcodeproj */,
 			);
 			name = ios_libs;
@@ -142,6 +160,14 @@
 				377A285D1B95BE77009BB389 /* Default-568h@2x.png */,
 			);
 			name = userContent;
+			sourceTree = "<group>";
+		};
+		5E14C6431C9172B300FDC937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		77F7611D158B0B80003A4120 = {
@@ -215,6 +241,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5E14C6491C9172C800FDC937 /* PBXTargetDependency */,
 				5E0F350E1C848E6B005FE117 /* PBXTargetDependency */,
 				37B5718B1B95E5D300D85CC3 /* PBXTargetDependency */,
 			);
@@ -250,6 +277,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 5E14C6431C9172B300FDC937 /* Products */;
+					ProjectRef = 5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */;
+				},
+				{
 					ProductGroup = 59705435159DB8080003BA92 /* Products */;
 					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 				},
@@ -278,6 +309,13 @@
 			fileType = archive.ar;
 			path = lib__REPLACE_MODULE_NAME__.a;
 			remoteRef = 59705438159DB8090003BA92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiBuildAppLib.a;
+			remoteRef = 5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -320,6 +358,11 @@
 			name = __REPLACE_MODULE_NAME__;
 			targetProxy = 5E0F350D1C848E6B005FE117 /* PBXContainerItemProxy */;
 		};
+		5E14C6491C9172C800FDC937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iBuildAppLib;
+			targetProxy = 5E14C6481C9172C800FDC937 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -348,7 +391,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = NO;
@@ -376,7 +418,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = YES;
@@ -409,7 +450,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/userContent\"",
 				);
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,7 +474,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/userContent\"",
 				);
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
