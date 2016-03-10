@@ -79,7 +79,7 @@
 		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = ../__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
 		5E0F35101C857E19005FE117 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = userContent/config.xml; sourceTree = SOURCE_ROOT; };
 		5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iBuildAppLib.xcodeproj; path = ../../ios_libs/iBuildAppLib/iBuildAppLib.xcodeproj; sourceTree = "<group>"; };
-		5EFBA90D1C86DFBD007AD042 /* appConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appConfig.h; sourceTree = "<group>"; };
+		5EFBA90D1C86DFBD007AD042 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		77F76128158B0B80003A4120 /* hostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F7612C158B0B80003A4120 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		77F7612E158B0B80003A4120 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -194,7 +194,7 @@
 		77F76132158B0B80003A4120 /* hostApp */ = {
 			isa = PBXGroup;
 			children = (
-				5EFBA90D1C86DFBD007AD042 /* appConfig.h */,
+				5EFBA90D1C86DFBD007AD042 /* AppConfig.h */,
 				77F76158158B0C78003A4120 /* AppDelegate.h */,
 				77F76159158B0C78003A4120 /* AppDelegate.m */,
 				77F7615B158B0C85003A4120 /* RootViewController.h */,
