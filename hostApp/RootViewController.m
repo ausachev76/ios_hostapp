@@ -66,16 +66,15 @@
 {
     NSError *error = nil;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"];
-    NSString *xmlData = [NSString stringWithContentsOfFile:filePath
-                                                  encoding:NSUTF8StringEncoding
-                                                     error:&error];
+    NSData *xmlData = [NSData dataWithContentsOfFile:filePath options: 0 error:&error];
+
     if (error)
     {
         NSLog(@"%@ %@", [error localizedDescription], [error userInfo]);
         return;
     }
 
-    TBXML *tbxml = [TBXML newTBXMLWithXMLString:xmlData error:&error];
+    TBXML *tbxml = [TBXML newTBXMLWithXMLData:xmlData error:&error];
     [tbxml autorelease];
 
     if (error)
