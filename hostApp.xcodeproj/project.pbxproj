@@ -112,14 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37B571171B95C91B00D85CC3 /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */,
-			);
-			name = plugins;
-			sourceTree = "<group>";
-		};
 		37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +165,7 @@
 		77F7611D158B0B80003A4120 = {
 			isa = PBXGroup;
 			children = (
-				37B571171B95C91B00D85CC3 /* plugins */,
+				37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */,
 				77F76132158B0B80003A4120 /* hostApp */,
 				77F7612B158B0B80003A4120 /* Frameworks */,
 				77F76129158B0B80003A4120 /* Products */,
