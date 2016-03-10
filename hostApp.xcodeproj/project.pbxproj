@@ -230,6 +230,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					77F76127158B0B80003A4120 = {
+						DevelopmentTeam = 5384YDUCY8;
+					};
+				};
 			};
 			buildConfigurationList = 77F76122158B0B80003A4120 /* Build configuration list for PBXProject "hostApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -344,8 +349,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -361,8 +366,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "72003e7a-3716-43c7-a88f-fc229b0844f3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -372,8 +377,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -383,8 +388,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "72003e7a-3716-43c7-a88f-fc229b0844f3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -394,7 +399,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
@@ -405,8 +411,9 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/";
 				WRAPPER_EXTENSION = app;
@@ -417,7 +424,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
@@ -428,8 +436,9 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.myapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/";
 				WRAPPER_EXTENSION = app;
