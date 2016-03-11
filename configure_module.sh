@@ -4,10 +4,7 @@
 # not intended to be run by the user, another script within a module
 # should do it.
 #
-# Parameters: <module-name>
-#
-# <module-name> is the name of the module to configure. A module name
-# refers to the module Xcode project name and the module main class.
+# Parameters: none
 #
 
 set -o errexit
@@ -26,7 +23,52 @@ LIBS_REPO_NAME=ios_libs
 LIBS_REPO_URL="https://github.com/aoriens/$LIBS_REPO_NAME.git"
 LIBS_PATH="$MODULE_PATH/$LIBS_REPO_NAME"
 
-MODULE_NAME="${1:?Module name must be set in the first parameter}"
+die() {
+    echo "$@" 1>&2
+    exit 1
+}
+
+# Returns the module name or exits
+determineModuleName() {
+    local xcodeProjects=$(
+        find "$MODULE_PATH" -name '*.xcodeproj' -not -name 'hostApp.xcodeproj' -depth 1 -type d |
+            while read LINE; do
+                echo "$(basename "$LINE")"
+            done
+          )
+
+    local projectPath=$(
+        # It's executed in a subshell to isolate variable PS3 and IFS
+        # changes
+        (
+            if [ "$(wc -l <<< "$xcodeProjects")" -lt 2 ]; then
+                # If one module or no modules found, use the found
+                # xcodeProjects string
+                echo "$xcodeProjects"
+            else
+                # Otherwise allow the user to choose a module project
+                # manually
+                PS3="Several Xcode projects have been found, which one is to be configured as the module? "
+                IFS=$'\n'
+                local p=
+                select p in $xcodeProjects; do
+                    [ -n "$p" ] && break
+                done
+
+                # User can close stdin here, so p may be empty
+                echo "$p"
+            fi
+        ))
+
+    if [ -z "$projectPath" -o ! -d "$MODULE_PATH/$projectPath" ]; then
+        die "No modules found"
+    fi
+
+    # Cut off '.xcodeproj' suffix
+    echo "${projectPath%.xcodeproj}"
+}
+
+MODULE_NAME="$(determineModuleName)"
 
 if [ ! -e "$LIBS_PATH/.git/HEAD" ]; then
     git clone "$LIBS_REPO_URL" "$LIBS_PATH"
