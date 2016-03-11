@@ -3,3 +3,7 @@
 **/*.xcodeproj/project.xcworkspace
 
 .DS_Store
+
+# Ignore config.xml, as it's copied from within a module directory by
+# the configuration script and can be modified by the user.
+/userContent/config.xml
