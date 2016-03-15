@@ -2,7 +2,7 @@
 #
 # This is the main script to configure a module for development. It's
 # not intended to be run by the user, another script within a module
-# should do it.
+# project directory should do it.
 #
 # Parameters: none
 #
