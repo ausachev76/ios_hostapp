@@ -14,6 +14,7 @@
 		5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
 		5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */; };
+		5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */; };
 		77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612C158B0B80003A4120 /* UIKit.framework */; };
 		77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612E158B0B80003A4120 /* Foundation.framework */; };
 		77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F76130158B0B80003A4120 /* CoreGraphics.framework */; };
@@ -65,6 +66,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5ED6C56F1C916B96009CA944;
 			remoteInfo = iBuildAppLib;
+		};
+		5EC9D6981C983BF5008EBF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EC9D67E1C980230008EBF34;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
+		};
+		5EC9D69B1C983BF5008EBF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EC9D67F1C980230008EBF34;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -141,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */,
+				5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5EC9D6991C983BF5008EBF34 /* PBXTargetDependency */,
 				5E14C6491C9172C800FDC937 /* PBXTargetDependency */,
 				5E0F350E1C848E6B005FE117 /* PBXTargetDependency */,
 				37B5718B1B95E5D300D85CC3 /* PBXTargetDependency */,
@@ -310,6 +327,13 @@
 			remoteRef = 5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = __REPLACE_MODULE_NAME__Resources.bundle;
+			remoteRef = 5EC9D69B1C983BF5008EBF34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -317,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */,
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
 				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
 				37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */,
@@ -354,6 +379,11 @@
 			isa = PBXTargetDependency;
 			name = iBuildAppLib;
 			targetProxy = 5E14C6481C9172C800FDC937 /* PBXContainerItemProxy */;
+		};
+		5EC9D6991C983BF5008EBF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = __REPLACE_MODULE_NAME__Resources;
+			targetProxy = 5EC9D6981C983BF5008EBF34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
