@@ -50,7 +50,7 @@
 		37EB7DF41C9DFC9F001E8E3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7DF31C9DFC9F001E8E3F /* AppDelegate.m */; };
 		37EB7E0F1C9E1633001E8E3F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7E0E1C9E1633001E8E3F /* RootViewController.m */; };
 		37EB7E101C9E1959001E8E3F /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371156C91C998E6D00DAE897 /* libPayPalMobile.a */; };
-		5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */; };
+		5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
 		5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */; };
 		5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */; };
@@ -241,7 +241,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 59705423159DB8080003BA92;
+			remoteGlobalIDString = 59559E081670D39100BE9937;
 			remoteInfo = __REPLACE_MODULE_NAME__;
 		};
 		5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */ = {
@@ -262,7 +262,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 59804D5516CCDB3B006D7A67;
+			remoteGlobalIDString = 59E93C03192F40F600430F4B;
 			remoteInfo = __REPLACE_MODULE_NAME__Resources;
 		};
 		5EC9D69B1C983BF5008EBF34 /* PBXContainerItemProxy */ = {
@@ -403,7 +403,7 @@
 				37E71DFF1C9C2F3C000A4423 /* libFlurryAnalytics.a in Frameworks */,
 				5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */,
 				37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */,
-				5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */,
+				5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */,
 				77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */,
 				77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */,
 				77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */,
@@ -583,7 +583,7 @@
 		59705435159DB8080003BA92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */,
+				59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */,
 				5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */,
 			);
 			name = Products;
@@ -897,10 +897,10 @@
 			remoteRef = 37DC88641C9D572D00B15625 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */ = {
+		59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = __REPLACE_MODULE_NAME__.a;
+			path = lib__REPLACE_MODULE_NAME__.a;
 			remoteRef = 59705438159DB8090003BA92 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1055,6 +1055,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					../ios_libs,
 					../ios_libs/FacebookSDK/,
@@ -1100,6 +1101,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iBuildApp, Inc (5384YDUCY8)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					../ios_libs,
 					../ios_libs/FacebookSDK/,
