@@ -50,10 +50,10 @@
 		37EB7DF41C9DFC9F001E8E3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7DF31C9DFC9F001E8E3F /* AppDelegate.m */; };
 		37EB7E0F1C9E1633001E8E3F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7E0E1C9E1633001E8E3F /* RootViewController.m */; };
 		37EB7E101C9E1959001E8E3F /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371156C91C998E6D00DAE897 /* libPayPalMobile.a */; };
-		5970543C159DB9D00003BA92 /* mFanWall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* mFanWall.a */; };
+		5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
 		5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */; };
-		5EC9D69D1C983C1F008EBF34 /* mFanWallResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC9D69C1C983BF5008EBF34 /* mFanWallResources.bundle */; };
+		5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */; };
 		77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612C158B0B80003A4120 /* UIKit.framework */; };
 		77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612E158B0B80003A4120 /* Foundation.framework */; };
 		77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F76130158B0B80003A4120 /* CoreGraphics.framework */; };
@@ -232,17 +232,17 @@
 		};
 		59705438159DB8090003BA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 59705434159DB8080003BA92 /* mFanWall.xcodeproj */;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 59705424159DB8080003BA92;
-			remoteInfo = mFanWall;
+			remoteInfo = __REPLACE_MODULE_NAME__;
 		};
 		5E0F350D1C848E6B005FE117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 59705434159DB8080003BA92 /* mFanWall.xcodeproj */;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 59705423159DB8080003BA92;
-			remoteInfo = mFanWall;
+			remoteInfo = __REPLACE_MODULE_NAME__;
 		};
 		5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -260,17 +260,17 @@
 		};
 		5EC9D6981C983BF5008EBF34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 59705434159DB8080003BA92 /* mFanWall.xcodeproj */;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 59804D5516CCDB3B006D7A67;
-			remoteInfo = mFanWallResources;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
 		};
 		5EC9D69B1C983BF5008EBF34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 59705434159DB8080003BA92 /* mFanWall.xcodeproj */;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5EC9D67F1C980230008EBF34;
-			remoteInfo = mFanWallResources;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -347,7 +347,7 @@
 		37EB7DF31C9DFC9F001E8E3F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37EB7E0D1C9E1633001E8E3F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		37EB7E0E1C9E1633001E8E3F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		59705434159DB8080003BA92 /* mFanWall.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mFanWall.xcodeproj; path = ../mFanWall.xcodeproj; sourceTree = "<group>"; };
+		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = ../__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
 		5E0F35101C857E19005FE117 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = userContent/config.xml; sourceTree = SOURCE_ROOT; };
 		5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iBuildAppLib.xcodeproj; path = ../../ios_libs/iBuildAppLib/iBuildAppLib.xcodeproj; sourceTree = "<group>"; };
 		77F76128158B0B80003A4120 /* hostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -403,7 +403,7 @@
 				37E71DFF1C9C2F3C000A4423 /* libFlurryAnalytics.a in Frameworks */,
 				5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */,
 				37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */,
-				5970543C159DB9D00003BA92 /* mFanWall.a in Frameworks */,
+				5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */,
 				77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */,
 				77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */,
 				77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */,
@@ -512,12 +512,12 @@
 			path = ../ios_libs/PayPalMobile;
 			sourceTree = "<group>";
 		};
-		37B571571B95CC9000D85CC3 /* mFanWall */ = {
+		37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */ = {
 			isa = PBXGroup;
 			children = (
-				59705434159DB8080003BA92 /* mFanWall.xcodeproj */,
+				59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */,
 			);
-			name = mFanWall;
+			name = __REPLACE_MODULE_NAME__;
 			sourceTree = "<group>";
 		};
 		37B571621B95CF4100D85CC3 /* ios_libs */ = {
@@ -583,8 +583,8 @@
 		59705435159DB8080003BA92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59705439159DB8090003BA92 /* mFanWall.a */,
-				5EC9D69C1C983BF5008EBF34 /* mFanWallResources.bundle */,
+				59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */,
+				5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -609,7 +609,7 @@
 		77F7611D158B0B80003A4120 = {
 			isa = PBXGroup;
 			children = (
-				37B571571B95CC9000D85CC3 /* mFanWall */,
+				37B571571B95CC9000D85CC3 /* __REPLACE_MODULE_NAME__ */,
 				77F76132158B0B80003A4120 /* hostApp */,
 				77F7612B158B0B80003A4120 /* Frameworks */,
 				77F76129158B0B80003A4120 /* Products */,
@@ -778,7 +778,7 @@
 				},
 				{
 					ProductGroup = 59705435159DB8080003BA92 /* Products */;
-					ProjectRef = 59705434159DB8080003BA92 /* mFanWall.xcodeproj */;
+					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 				},
 				{
 					ProductGroup = 37001B661CA3C2C000EA5386 /* Products */;
@@ -897,10 +897,10 @@
 			remoteRef = 37DC88641C9D572D00B15625 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		59705439159DB8090003BA92 /* mFanWall.a */ = {
+		59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = mFanWall.a;
+			path = __REPLACE_MODULE_NAME__.a;
 			remoteRef = 59705438159DB8090003BA92 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -911,10 +911,10 @@
 			remoteRef = 5E14C6461C9172B300FDC937 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5EC9D69C1C983BF5008EBF34 /* mFanWallResources.bundle */ = {
+		5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = mFanWallResources.bundle;
+			path = __REPLACE_MODULE_NAME__Resources.bundle;
 			remoteRef = 5EC9D69B1C983BF5008EBF34 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -925,7 +925,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC9D69D1C983C1F008EBF34 /* mFanWallResources.bundle in Resources */,
+				5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */,
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
 				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
 				37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */,
@@ -1011,7 +1011,7 @@
 		};
 		5E0F350E1C848E6B005FE117 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = mFanWall;
+			name = __REPLACE_MODULE_NAME__;
 			targetProxy = 5E0F350D1C848E6B005FE117 /* PBXContainerItemProxy */;
 		};
 		5E14C6491C9172C800FDC937 /* PBXTargetDependency */ = {
@@ -1021,7 +1021,7 @@
 		};
 		5EC9D6991C983BF5008EBF34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = mFanWallResources;
+			name = __REPLACE_MODULE_NAME__Resources;
 			targetProxy = 5EC9D6981C983BF5008EBF34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1089,7 +1089,7 @@
 				PROVISIONING_PROFILE = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../mFanWall ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
 			};
 			name = Debug;
 		};
@@ -1128,7 +1128,7 @@
 				PROVISIONING_PROFILE = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72003e7a-3716-43c7-a88f-fc229b0844f3";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../mFanWall ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
