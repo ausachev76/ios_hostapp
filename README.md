@@ -1,18 +1,29 @@
-Use our code to save yourself time on cross-platform, cross-device and cross OS version development and testing
 # iOS hostApp
-The "hostApp" folder contains project files for the host-application. These project files are used for launching and deploying your iOS Feature. Normally there is no need to change these files.
 
-The "_REPLACE_MODULE_NAME_" folder contains files and folders of the project that serves as a template for your iOS Feature. This is the place where you will allocate your source code.
+This project presents a host application to run a single iBuildApp
+module.
 
-The "userContent" folder is used to store a user-generated content (images, audio files, text files, configuration files, etc.) that is required for the Feature you develop. Once your Feature is compiled, the ready-to-use static library will be allocated into this folder.
+iBuildApp modules are just library projects, so they cannot be run
+standalone. They need an application that can properly initialize and
+call them. This project is a minimal application able to perform that.
 
-To properly register your iOS Feature, the iBuildApp SDK requires that project files follow this convention:
+To make the project be built and run with a specific module, proper
+configuration is needed. This is done by `configure_module.sh` script.
+During configuration some source and project files are created from
+the corresponding template files; a fixed string is substituted with
+the module name. You may find an additional information within the
+script.
 
-Resource file names should start with Feature ID, i.e.  
+Do not open the project in Xcode until the configuration is done.
 
-_REPLACE_MODULE_NAME_logo_small.png (image resource file)
+# Committing changes
 
-_REPLACE_MODULE_NAME_appconfig.xml (XML resource file)
+Committing changes in the files having been created from templates may
+be tricky (especially the Xcode project file). They are intentionally
+ignored by version control system, only the corresponding template
+files are tracked. You need running `make_templates_from_files.sh`
+script before committing, it will write the files back to template
+files with reverse transforming. DO NOT MODIFY TEMPLATE FILES BY HAND,
+as the script overwrites them entirely. You may find an additional
+information within the script.
 
-The static library file created during the Feature compilation should have exactly the same name as the Feature ID, with <.a> extension (by default the template is set up that way - do not change those settings!): _REPLACE_MODULE_NAME_.a
-Name of the starting View Controller that serves as a Root View Controller of View Controllers stack for your Feature should be as the following:_REPLACE_MODULE_NAME_ViewController (by default the template is set up that way - do not change those settings!)

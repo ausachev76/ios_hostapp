@@ -4,7 +4,13 @@
 # not intended to be run by the user, another script within a module
 # project directory should do it.
 #
-# Parameters: none
+# Parameters: [--get-module-name]
+#
+# If none of options is given, module configuration is performed.
+#
+# --get-module-name option causes printing the name of a module and
+# exiting, module configuration is not performed. The module name is
+# determined in a standard way as during the configuration process.
 #
 
 set -o errexit
@@ -70,6 +76,15 @@ determineModuleName() {
 
 MODULE_NAME="$(determineModuleName)"
 
+if [ $# -gt 0 ]; then
+    if [ "$1" = "--get-module-name" ]; then
+        echo "$MODULE_NAME"
+        exit
+    else
+        die "Unknown option: $1"
+    fi
+fi
+
 if [ ! -e "$LIBS_PATH/.git/HEAD" ]; then
     git clone "$LIBS_REPO_URL" "$LIBS_PATH"
 fi
@@ -81,8 +96,14 @@ if [ ! -e userContent/config.xml ]; then
     cp -n "$MODULE_PATH/config.xml.sample" userContent/config.xml
 fi
 
-sed -e "s/__REPLACE_MODULE_NAME__/$MODULE_NAME/g" -i '' \
-    hostApp.xcodeproj/project.pbxproj hostApp/AppConfig.h
+# Copy a template file into file $1 with replacing some substrings
+# inside with a module name $2
+makeFileFromTemplateWithModuleName() {
+    sed -e "s/__REPLACE_MODULE_NAME__/$2/g" "$1.template" > "$1"
+}
+
+makeFileFromTemplateWithModuleName hostApp.xcodeproj/project.pbxproj "$MODULE_NAME"
+makeFileFromTemplateWithModuleName hostApp/AppConfig.h "$MODULE_NAME"
 
 echo "
 Module '$MODULE_NAME' has been successfully prepared for development.

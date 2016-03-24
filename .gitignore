@@ -7,3 +7,7 @@
 # Ignore config.xml, as it's copied from within a module directory by
 # the configuration script and can be modified by the user.
 /userContent/config.xml
+
+# The files being created from templates during configuration
+/hostApp.xcodeproj/project.pbxproj
+/hostApp/AppConfig.h
