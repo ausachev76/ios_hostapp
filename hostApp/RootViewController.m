@@ -43,7 +43,9 @@
     if ( retActionValue )
         return retActionValue;
 
-    [viewController setModuleName:[params objectForKey:@"title"]];
+    // @todo: temporarily commented out to avoid causing the unknown method exception
+    //
+    // [viewController setModuleName:[params objectForKey:@"title"]];
 
     return viewController;
 }
