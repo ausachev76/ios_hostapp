@@ -52,6 +52,9 @@
 		37EB7E101C9E1959001E8E3F /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371156C91C998E6D00DAE897 /* libPayPalMobile.a */; };
 		5970543C159DB9D00003BA92 /* lib__REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* lib__REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
+		5E0FFAB31CA5196A00F5F2B2 /* ZDCChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E0FFAB01CA5196A00F5F2B2 /* ZDCChat.bundle */; };
+		5E0FFAB41CA5196A00F5F2B2 /* ZDCChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0FFAB11CA5196A00F5F2B2 /* ZDCChat.framework */; };
+		5E0FFAB51CA5196A00F5F2B2 /* ZDCChatStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E0FFAB21CA5196A00F5F2B2 /* ZDCChatStrings.bundle */; };
 		5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E14C6471C9172B300FDC937 /* libiBuildAppLib.a */; };
 		5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC9D69C1C983BF5008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle */; };
 		77F7612D158B0B80003A4120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F7612C158B0B80003A4120 /* UIKit.framework */; };
@@ -349,6 +352,9 @@
 		37EB7E0E1C9E1633001E8E3F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = __REPLACE_MODULE_NAME__.xcodeproj; path = ../__REPLACE_MODULE_NAME__.xcodeproj; sourceTree = "<group>"; };
 		5E0F35101C857E19005FE117 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = userContent/config.xml; sourceTree = SOURCE_ROOT; };
+		5E0FFAB01CA5196A00F5F2B2 /* ZDCChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ZDCChat.bundle; path = ../ios_libs/ZDCChat.bundle; sourceTree = "<group>"; };
+		5E0FFAB11CA5196A00F5F2B2 /* ZDCChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZDCChat.framework; path = ../ios_libs/ZDCChat.framework; sourceTree = "<group>"; };
+		5E0FFAB21CA5196A00F5F2B2 /* ZDCChatStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ZDCChatStrings.bundle; path = ../ios_libs/ZDCChatStrings.bundle; sourceTree = "<group>"; };
 		5E14C6421C9172B300FDC937 /* iBuildAppLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iBuildAppLib.xcodeproj; path = ../../ios_libs/iBuildAppLib/iBuildAppLib.xcodeproj; sourceTree = "<group>"; };
 		77F76128158B0B80003A4120 /* hostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F7612C158B0B80003A4120 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -393,6 +399,7 @@
 				377288E81C9C54E300C802D0 /* MobileCoreServices.framework in Frameworks */,
 				377288E61C9C537900C802D0 /* libz.1.2.5.dylib in Frameworks */,
 				377288DE1C9C51D400C802D0 /* libsqlite3.dylib in Frameworks */,
+				5E0FFAB41CA5196A00F5F2B2 /* ZDCChat.framework in Frameworks */,
 				377288E21C9C52AB00C802D0 /* CoreData.framework in Frameworks */,
 				377288E01C9C528B00C802D0 /* AdSupport.framework in Frameworks */,
 				377288D41C9C4F0200C802D0 /* libSQLiteManager.a in Frameworks */,
@@ -627,6 +634,9 @@
 		77F7612B158B0B80003A4120 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E0FFAB01CA5196A00F5F2B2 /* ZDCChat.bundle */,
+				5E0FFAB11CA5196A00F5F2B2 /* ZDCChat.framework */,
+				5E0FFAB21CA5196A00F5F2B2 /* ZDCChatStrings.bundle */,
 				37EB7DED1C9DF901001E8E3F /* EventKit.framework */,
 				37EB7DEE1C9DF901001E8E3F /* EventKitUI.framework */,
 				37EB7DEB1C9DF8D1001E8E3F /* StoreKit.framework */,
@@ -777,12 +787,12 @@
 					ProjectRef = 371155951C993C2F00DAE897 /* MBProgressHUD.xcodeproj */;
 				},
 				{
-					ProductGroup = 59705435159DB8080003BA92 /* Products */;
-					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
-				},
-				{
 					ProductGroup = 37001B661CA3C2C000EA5386 /* Products */;
 					ProjectRef = 37001B651CA3C2C000EA5386 /* MWPhotoBrowser.xcodeproj */;
+				},
+				{
+					ProductGroup = 59705435159DB8080003BA92 /* Products */;
+					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 				},
 				{
 					ProductGroup = 371156B31C998A6E00DAE897 /* Products */;
@@ -926,6 +936,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC9D69D1C983C1F008EBF34 /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */,
+				5E0FFAB31CA5196A00F5F2B2 /* ZDCChat.bundle in Resources */,
+				5E0FFAB51CA5196A00F5F2B2 /* ZDCChatStrings.bundle in Resources */,
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
 				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
 				37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */,
