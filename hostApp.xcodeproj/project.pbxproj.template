@@ -56,6 +56,7 @@
 		37EB7DF41C9DFC9F001E8E3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7DF31C9DFC9F001E8E3F /* AppDelegate.m */; };
 		37EB7E0F1C9E1633001E8E3F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB7E0E1C9E1633001E8E3F /* RootViewController.m */; };
 		37EB7E101C9E1959001E8E3F /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371156C91C998E6D00DAE897 /* libPayPalMobile.a */; };
+		37EC30D11CA96B7800BB196A /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37EC30CC1CA927D100BB196A /* __REPLACE_MODULE_NAME__Resources.bundle */; };
 		5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */; };
 		5E0F35111C857E19005FE117 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E0F35101C857E19005FE117 /* config.xml */; };
 		5E0FFAB31CA5196A00F5F2B2 /* ZDCChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E0FFAB01CA5196A00F5F2B2 /* ZDCChat.bundle */; };
@@ -237,6 +238,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 374F1EDB1AE6895200A7AC33;
 			remoteInfo = IBPayments;
+		};
+		37EC30C81CA927D000BB196A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5914D6B519331ADD00E6CB7A;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
+		};
+		37EC30CB1CA927D100BB196A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5914D6B619331ADD00E6CB7A;
+			remoteInfo = __REPLACE_MODULE_NAME__Resources;
 		};
 		59705438159DB8090003BA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -675,6 +690,7 @@
 			isa = PBXGroup;
 			children = (
 				59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */,
+				37EC30CC1CA927D100BB196A /* __REPLACE_MODULE_NAME__Resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -800,6 +816,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				37EC30C91CA927D000BB196A /* PBXTargetDependency */,
 				37001B8E1CA3CECB00EA5386 /* PBXTargetDependency */,
 				37001B901CA3CECB00EA5386 /* PBXTargetDependency */,
 				37001B921CA3CECB00EA5386 /* PBXTargetDependency */,
@@ -867,12 +884,12 @@
 					ProjectRef = 37001B5F1CA3C02500EA5386 /* inputToolbar.xcodeproj */;
 				},
 				{
-					ProductGroup = 59705435159DB8080003BA92 /* Products */;
-					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
-				},
-				{
 					ProductGroup = 3711559B1C993C3300DAE897 /* Products */;
 					ProjectRef = 371155951C993C2F00DAE897 /* MBProgressHUD.xcodeproj */;
+				},
+				{
+					ProductGroup = 59705435159DB8080003BA92 /* Products */;
+					ProjectRef = 59705434159DB8080003BA92 /* __REPLACE_MODULE_NAME__.xcodeproj */;
 				},
 				{
 					ProductGroup = 37001B661CA3C2C000EA5386 /* Products */;
@@ -991,6 +1008,13 @@
 			remoteRef = 37DC88641C9D572D00B15625 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		37EC30CC1CA927D100BB196A /* __REPLACE_MODULE_NAME__Resources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = __REPLACE_MODULE_NAME__Resources.bundle;
+			remoteRef = 37EC30CB1CA927D100BB196A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		59705439159DB8090003BA92 /* __REPLACE_MODULE_NAME__.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1019,6 +1043,7 @@
 				77F76137158B0B80003A4120 /* InfoPlist.strings in Resources */,
 				37D5E8B41CA5542500C316BC /* zbar-help.html in Resources */,
 				377A285E1B95BE77009BB389 /* Default-568h@2x.png in Resources */,
+				37EC30D11CA96B7800BB196A /* __REPLACE_MODULE_NAME__Resources.bundle in Resources */,
 				37D5E8B31CA5542500C316BC /* zbar-back.png in Resources */,
 				37B571CD1B95EF0400D85CC3 /* Localizable.strings in Resources */,
 				5E0F35111C857E19005FE117 /* config.xml in Resources */,
@@ -1101,6 +1126,11 @@
 			name = IBPayments;
 			targetProxy = 37E31BF01C9EEE810096BE74 /* PBXContainerItemProxy */;
 		};
+		37EC30C91CA927D000BB196A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = __REPLACE_MODULE_NAME__Resources;
+			targetProxy = 37EC30C81CA927D000BB196A /* PBXContainerItemProxy */;
+		};
 		5E0F350E1C848E6B005FE117 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = __REPLACE_MODULE_NAME__;
@@ -1178,7 +1208,7 @@
 				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
 			};
 			name = Debug;
 		};
@@ -1219,7 +1249,7 @@
 				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

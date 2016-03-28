@@ -3,6 +3,11 @@
 #import "TBXML.h"
 #import "appConfig.h"
 
+#import "iphviewcontrollerlist.h"
+#import "auth_Share.h"
+#import "appbuilderappconfig.h"
+#import <FacebookSDK/FacebookSDK.h>
+
 @interface MODULE_VIEW_CONTROLLER : UIViewController <ModuleDataReceiverProtocol>
 + (void)parseXML:(NSValue *)xmlElement withParams:(NSMutableDictionary *)paramsOut;
 @end
@@ -11,7 +16,16 @@
 
 - (id)createModuleViewControllerWithParent:(UIViewController *)parent
 {
-    MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
+   // MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
+   //------
+   [params setValue:@"AppTitle" forKey:@"title"];
+   [params setValue:@"catalogue" forKey:@"type"];
+   [params setValue:@"0" forKey:@"module_id"];
+  
+   MODULE_VIEW_CONTROLLER *viewController = (MODULE_VIEW_CONTROLLER *)[RootViewController controllerWithType:[params objectForKey:@"type"]
+                                                                                                   moduleID:[params objectForKey:@"module_id"]];
+   //------
+  
     [viewController setParams:params];
 
     id retActionValue = nil;
@@ -96,6 +110,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //----- TODO: Right way for Facebook Session in appHost
+    NSString *currentFBAppID = appIBuildAppFacebookAppID();
+    [FBSettings setDefaultAppID:currentFBAppID];
+    //-----
     [self loadModuleParams];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -120,6 +138,57 @@
 - (void)viewWillAppear:(BOOL)animated
 {
   [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+// TODO: Method copied from iphpluginmanager.m of ios_core in appBuilder project
++(UIViewController *)controllerWithType:(NSString *)type
+                               moduleID:(NSString *)moduleID
+{
+  const TIphoneVCdescriptor *vcd = viewControllerByType(type);
+  if ( !vcd )
+    return nil;
+  
+  if ( vcd->className )
+  {    UIViewController *vc = [self createViewControllerWithName:vcd->className
+                                                                         nibName:vcd->nibName
+                                                                          bundle:nil];
+    //[vc setModuleType:type];
+    return vc;
+  }
+  
+  return [self createViewControllerWithName:[moduleID stringByAppendingString:@"ViewController"]
+                                                    nibName:nil
+                                                     bundle:nil];
+}
+
+// TODO: Method copied from iphpluginmanager.m of ios_core in appBuilder project
++(UIViewController *)createViewControllerWithName:(NSString *)moduleName_
+                                          nibName:(NSString *)nibName_
+                                           bundle:(NSString *)bundleName_
+{
+  if ( !( moduleName_ &&
+         [moduleName_ length] ) )
+    return nil;
+  
+  Class theModuleClass = NSClassFromString( moduleName_ );
+  
+  if ( !theModuleClass )
+    return nil;
+  
+  if ( [theModuleClass isSubclassOfClass:[UIViewController class]] )
+  {
+    NSBundle *bundle = nil;
+    if ( bundleName_ )
+    {
+      NSString *bundlePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:bundleName_];
+      bundle = [NSBundle bundleWithPath:bundlePath];
+      if (!bundle)
+        NSLog(@"no bundle found at: %@", bundlePath );
+    }
+    
+    return [[[theModuleClass alloc] initWithNibName:nibName_ bundle:bundle] autorelease];
+  }
+  return nil;
 }
 
 @end

@@ -1,1 +1,1402 @@
+/* --- core strings --- */
 
+/* Allow iBuildApp access your address book by going to  Settings > Privacy > Contacts */
+"core_ABAccessDeniedAlertMessage" = "Разрешите приложению доступ к адресной книге:\nНастройки > Приватность > Контакты";
+
+/* OK */
+"core_ABAccessDeniedAlertOkButtonTitle" = "OK";
+
+/* Access denied */
+"core_ABAccessDeniedAlertTitle" = "Доступ запрещен";
+
+/* Adding to calendar is disabled */
+"core_addingToCalendarDisabledMessage" = "Добавление в календарь запрещено";
+
+/* Add to Contacts */
+"core_callNumberAlertAddToContactsButtonTitle" = "Добавить в Контакты";
+
+/* Call */
+"core_callNumberAlertCallButtonTitle" = "Вызов";
+
+/* Cancel */
+"core_callNumberAlertCancelButtonTitle" = "Отмена";
+
+/* This device not configured to send mail */
+"core_cannotSendEmailAlertMessage" = "Настройки Email неверны или отсутствуют";
+
+/* OK */
+"core_cannotSendEmailAlertOkButtonTitle" = "OK";
+
+/* Mail cannot be send */
+"core_cannotSendEmailAlertTitle" = "Письмо не отправлено";
+
+/* This device not configured to send SMS */
+"core_cannotSendSMSAlertMessage" = "Настройки СМС неверны или отсутствуют";
+
+/* OK */
+"core_cannotSendSMSAlertOkButtonTitle" = "OK";
+
+/* SMS cannot be send */
+"core_cannotSendSMSAlertTitle" = "СМС не отправлено";
+
+/* Contact has been added to the Address Book. */
+"core_contactAddedAlertMessage" = "Контакт добавлен";
+
+/* OK */
+"core_contactAddedAlertOkButtonTitle" = "OK";
+
+/* Contact already exists. */
+"core_contactExistsAlertMessage" = "Контакт уже существует";
+
+/* OK */
+"core_contactExistsAlertOkButtonTitle" = "OK";
+
+/* Can not add contact without phone number! */
+"core_emptyPhoneNumberAddMessage" = "Номер телефона отсутствует. Контакт добавить невозможно";
+
+/* OK */
+"core_emptyPhoneNumberAddOkButtonTitle" = "OK";
+
+/* The event '%@' has been successfully added to your calendar */
+"core_eventAddedMessage" = "Событие '%@' успешно добавлено в календарь"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Event already exists. */
+"core_eventAlreadyExistsMessage" = "Событие уже существует";
+
+/* OK */
+"core_eventGeneralAlertOkButtonTitle" = "OK";
+
+/* Event */
+"core_eventGeneralAlertTitle" = "Событие";
+
+/* Just Now */
+"core_formatTimeIntervalJustNow" = "Только что";
+
+/* 1 hour ago */
+"core_formatTimeIntervalOneHourAgo" = "1 час назад";
+
+/* 1 minute ago */
+"core_formatTimeIntervalOneMinuteAgo" = "1 минуту назад";
+
+/* days ago */
+"core_formatTimeIntervalSomeDaysAgo" = "дней назад";
+
+/* hours ago */
+"core_formatTimeIntervalSomeHoursAgo" = "часов назад";
+
+/* minutes ago */
+"core_formatTimeIntervalSomeMinutesAgo" = "минут назад";
+
+/* Yesterday */
+"core_formatTimeIntervalYesterday" = "Вчера";
+
+/* To retrieve actual content, you must have an Internet connection. */
+"core_internetRequiredAlertMessage" = "Для загрузки данных необходимо соединение с Интернетом";
+
+/* OK */
+"core_internetRequiredAlertOkButtonTitle" = "OK";
+
+/* Last Updated: %@ */
+"core_lastUpdatedLabel" = "Последнее обновление: %@"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Loading... */
+"core_loadingMessage" = "Загрузка...";
+
+/* Sent from */
+"core_messageTextShowLinkAddition" = "Отправлено с";
+
+/* Cancel */
+"core_photoBrowserCancelButtonTitle" = "Отмена";
+
+/* Copied */
+"core_photoBrowserCopiedMessage" = "Скопировано";
+
+/* Copying */
+"core_photoBrowserCopyingMessage" = "Копируется";
+
+/* Done */
+"core_photoBrowserDoneButtonTitle" = "Готово";
+
+/* Dismiss */
+"core_photoBrowserEmailAlertDismissButtonTitle" = "Отмена";
+
+/* Email failed to send. Please try again. */
+"core_photoBrowserEmailAlertMessage" = "Ошибка отправки письма. Попробуйте еще раз";
+
+/* Email */
+"core_photoBrowserEmailAlertTitle" = "Email";
+
+/* Can't save the image! */
+"core_photoBrowserErrorSavingPhotoAlertMessage" = "Изображение не сохранено!";
+
+/* OK */
+"core_photoBrowserErrorSavingPhotoAlertOKButtonTitle" = "OK";
+
+/* Error! */
+"core_photoBrowserErrorSavingPhotoAlertTitle" = "Ошибка!";
+
+/* Failed */
+"core_photoBrowserFailedMessage" = "Сохранить не удалось";
+
+/* of */
+"core_photoBrowserOfString" = "из";
+
+/* Photo */
+"core_photoBrowserPhotoString" = "Фотография";
+
+/* Preparing */
+"core_photoBrowserPreparingMessage" = "Подготовка";
+
+/* Saved */
+"core_photoBrowserSavedMessage" = "Сохранено";
+
+/* Save picture */
+"core_photoBrowserSavePictureButton" = "Сохранить";
+
+/* IB Side bar action for photo browser */
+"core_photoBrowserSideBarSaveAction" = "Сохранить";
+
+/* Saving */
+"core_photoBrowserSavingMessage" = "Сохранение";
+
+/* The picture has been saved to your iPhone. */
+"core_photoBrowserSuccessSavingPhotoAlertMessabe" = "Изображение сохранено";
+
+/* OK */
+"core_photoBrowserSuccessSavingPhotoAlertOKButtonTitle" = "OK";
+
+/* Powered by iBuildApp.com */
+"core_poweredByIBuildAppLabel" = "Разработано с помощью iBuildApp.com";
+
+/* Pull down to refresh... */
+"core_pullDownToRefreshMessage" = "Проведите вниз чтобы обновить...";
+
+/* Release to refresh... */
+"core_releaseToRefreshMessage" = "Отпустите чтобы обновить...";
+
+/* Home */
+"core_rootViewControllerTitle" = "Домой";
+
+/* Search string \"%@\" not found! */
+"core_searchStringNotFoundMessage" = "Строка \"%@\" не найдена!"; // symbols %@ and \ are needed for correct string generation, please don't remove!
+
+/* START */
+"core_singleModuleLoadButton" = "СТАРТ";
+
+/* Twitter Login */
+"core_twitterLoginPageTitle" = "Вход через Twitter";
+
+/* Please Wait... */
+"core_twitterLoginPleaseWaitMessage" = "Подождите...";
+
+/* Select and Copy the PIN */
+"core_twitterLoginSelectAndCopyPinMessage" = "Выделите и скопируйте PIN";
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{one}" = "%@ минута";
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{few}" = "%@ минуты";
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{many}" = "%@ минут";
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{other}" = "%@ минут";
+"core_formatTimeIntervalSomeHours_%@ hours##{one}" = "%@ час";
+"core_formatTimeIntervalSomeHours_%@ hours##{few}" = "%@ часа";
+"core_formatTimeIntervalSomeHours_%@ hours##{many}" = "%@ часов";
+"core_formatTimeIntervalSomeHours_%@ hours##{other}" = "%@ часов";
+"core_formatTimeIntervalSomeDays_%@ days##{one}" = "%@ день";
+"core_formatTimeIntervalSomeDays_%@ days##{few}" = "%@ дня";
+"core_formatTimeIntervalSomeDays_%@ days##{many}" = "%@ дней";
+"core_formatTimeIntervalSomeDays_%@ days##{other}" = "%@ дней";
+"core_formatTimeIntervalSomeMonths_%@ months##{one}" = "%@ месяц";
+"core_formatTimeIntervalSomeMonths_%@ months##{few}" = "%@ месяца";
+"core_formatTimeIntervalSomeMonths_%@ months##{many}" = "%@ месяцев";
+"core_formatTimeIntervalSomeMonths_%@ months##{other}" = "%@ месяцев";
+
+"core_formatTimeIntervalSomeMinutesAgo_%@ minutes ago##{few}" = "%@ минуты назад";
+"core_formatTimeIntervalSomeMinutesAgo_%@ minutes ago##{many}" = "%@ минут назад";
+"core_formatTimeIntervalSomeMinutesAgo_%@ minutes ago##{other}" = "%@ минут назад";
+"core_formatTimeIntervalSomeHoursAgo_%@ hours ago##{few}" = "%@ часа назад";
+"core_formatTimeIntervalSomeHoursAgo_%@ hours ago##{many}" = "%@ часов назад";
+"core_formatTimeIntervalSomeHoursAgo_%@ hours ago##{other}" = "%@ часов назад";
+"core_formatTimeIntervalSomeDaysAgo_%@ days ago##{few}" = "%@ дня назад";
+"core_formatTimeIntervalSomeDaysAgo_%@ days ago##{many}" = "%@ дней назад";
+"core_formatTimeIntervalSomeDaysAgo_%@ days ago##{other}" = "%@ дней назад";
+
+
+"core_navigationBackButtonTitle" = "Назад";
+/* Pluralized strings */
+
+
+/* --- Push Notifications --- */
+
+/* The app content has changed. Please restart the app: close the app and open it again. */
+"core_pushNSChangeContentNotificationMessage" = "Приложение обновилось. Пожалуйста, перезапустите приложение.";
+
+
+/* --- general strings --- */
+
+/* Cellular Data is Turned off */
+"general_cellularDataTurnedOff" = "Мобильный интернет отключен";
+
+/* Turn on cellular data or use Wi-Fi to access data */
+"general_cellularDataTurnOnMessage" = "Включите интернет, либо используйте Wi-Fi";
+
+/* OK */
+"general_defaultButtonTitleOK" = "OK";
+
+/* Error sending email */
+"general_sendingEmailFailedAlertMessage" = "Ошибка отправки";
+
+/* OK */
+"general_sendingEmailFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending email */
+"general_sendingEmailFailedAlertTitle" = "Письмо не отправлено";
+
+/* OK */
+"general_sendingMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending sms */
+"general_sendingSMSFailedAlertMessage" = "Ошибка отправки";
+
+/* OK */
+"general_sendingSMSFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending sms */
+"general_sendingSMSFailedAlertTitle" = "СМС не отправлено";
+
+/* Cancel */
+"general_sharingCancelButtonTitle" = "Отмена";
+
+/* Email */
+"general_sharingEmailButtonTitle" = "Email";
+
+/* Facebook */
+"general_sharingFacebookButtonTitle" = "Facebook";
+
+/* Message */
+"general_sharingMessageButtonTitle" = "Сообщение";
+
+/* Save Picture */
+"general_sharingSaveButtonTitle" = "Сохранить";
+
+/* No Thanks */
+"general_sharingNoThanksButtonTitle" = "Отмена";
+
+/* Twitter */
+"general_sharingTwitterButtonTitle" = "Twitter";
+
+/* Error! */
+"general_sharingTwitterFailedAlertTitle" = "Ошибка!";
+
+/* OK */
+"general_sharingTwitterSuccessAlertOkButtonTitle" = "OK";
+
+
+/* --- auth_Share strings --- */
+/* Cannot access Twitter Profile */
+"auth_Share_CannotAccessTwitterProfile" = "Учетная запись Twitter не доступна";
+
+
+
+/* --- module AudioPlayer strings --- */
+
+/* At */
+"core_formatTimeIntervalAt" = "в";
+
+/* Some */
+"authShare_shareEMailMessageSubjectPersonPlaceholder" = "Кое-кто";
+
+/* %@ wants to share with you */
+"mAP_shareEMailMessageSubject" = "%@ хочет поделиться с Вами"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Write a comment */
+"mAP_messageInputPlaceholder" = "Комментировать";
+
+/* Post */
+"mAP_messageInputButtonTitle" = "Отправить";
+
+/* Add Comment... */
+"mAP_addCommentMessage" = "Добавить комментарий...";
+
+/* Back */
+"mAP_backButtonTitle" = "Назад";
+
+/* Cannot open media stream */
+"mAP_cannotOpenMediaMessage" = "Невозможно открыть медиа поток";
+
+/* Ok */
+"mAP_cannotOpenMediaMessageOk" = "OK";
+
+/* Comments */
+"mAP_commentsLabel" = "Комментарии";
+
+/* Comments */
+"mAP_commentsPageTitle" = "Комментарии";
+
+/* Create New Account */
+"mAP_CreateNewAccount" = "Создать новую учетную запись";
+
+/* Email */
+"mAP_emailFieldPlaceholder" = "Email";
+
+/* I have an account */
+"mAP_HaveAnAccount" = "У меня уже есть учетная запись";
+
+/* Liked on Facebook */
+"mAP_likedFB" = "Отмечено на Facebook";
+
+/* Like */
+"mAP_likeInCommentsButton" = "Like";
+
+/* Login */
+"mAP_loginButtonTitle" = "Войти";
+
+/* Login with Email */
+"mAP_loginEmailButtonTitle" = "Войти, используя Email";
+
+/* Please enter a password that at least 4 characters long\n */
+"mAP_loginError01" = "Убедитесь, что Вы ввели корректный eMail и пароль (минимум 4 символа)\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please  enter correct email address\n */
+"mAP_loginError02" = "Введите корретный email\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* The username and password did not match\nour records, please try again */
+"mAP_loginError03" = "Имя пользователя и пароль не совпадают с нашими данными, попробуйте еще раз"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* OK */
+"mAP_loginErrorAlertOkButtonTitle" = "OK";
+
+/* Login with Facebook */
+"mAP_loginFacebookButtonTitle" = "Войти, используя Facebook";
+
+/* Cancel */
+"mAP_loginFBRequiredCancel" = "Отмена";
+
+/* Log In */
+"mAP_loginFBRequiredLogIn" = "Войти";
+
+/* You must be logged in to Facebook to like this item */
+"mAP_loginFBRequiredMessage" = "Вы должны быть авторизованы на Facebook, чтобы отметить эту запись";
+
+/* Log In Required */
+"mAP_loginFBRequiredTitle" = "Необходима авторизация";
+
+/* Login with iBuildApp */
+"mAP_loginIBAButtonTitle" = "Войти, используя iBuildApp";
+
+/* Login */
+"mAP_LoginTitle" = "Логин"; // "Войти"
+
+/* Login with Twitter */
+"mAP_loginTwitterButtonTitle" = "Войти, используя Twitter";
+
+/* Cancel */
+"mAP_loginTWRequiredCancel" = "Отмена";
+
+/* You must be logged in to Twitter to like this item */
+"mAP_loginTwRequiredMessage" = "Вы должны быть авторизованы на Twitter, чтобы отметить эту запись";
+
+/* Log In Required */
+"mAP_loginTwRequiredTitle" = "Необходима авторизация";
+
+/* There are no comments yet */
+"mAP_noCommentsLabel" = "Комментариев пока нет";
+
+/* There are no replies yet */
+"mAP_noRepliesLabel" = "Ответов пока нет";
+
+/* or */
+"mAP_Or" = "или";
+
+/* Password */
+"mAP_passwordFieldPlaceholder" = "Пароль";
+
+/* Clear */
+"mAP_postClearButtonTitle" = "Очистить";
+
+/* Cannot send empty message */
+"mAP_cannotSendEmpty" = "Нет сообщения для отправки";
+
+/* Sending failed. Please try again */
+"mAP_postMessageFailedAlertMessage" = "Ошибка отправки. Попробуйте еще раз";
+
+/* OK */
+"mAP_postMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Post */
+"mAP_postPostButtonTitle" = "Отправить";
+
+/* Replies */
+"mAP_repliesPageTitle" = "Ответы";
+
+/* OK */
+"mAP_sendingMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mAP_shareEMailMessageShowLinkAddition" = "Опубликовано через iBuildApp http://ibuildapp.com.";
+
+/* OK */
+"mAP_shareFB&TErrorAlertOkButtonTitle" = "OK";
+
+/* Error */
+"mAP_shareFB&TErrorAlertTitle" = "Ошибка";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mAP_shareFB&TMessageShowLinkAddition" = "Опубликовано через iBuildApp http://ibuildapp.com.";
+
+
+/* The message has been posted to your Facebook wall. */
+"mAP_shareFB&TSuccessAlertMessage" = "Сообщение было опубликовано на Вашей стене Facebook";
+
+/* OK */
+"mAP_shareFB&TSuccessAlertTitle" = "OK";
+
+/* Share on Facebook */
+"mAP_sharingMessageFacebookTitle" = "Поделиться в Facebook";
+
+/* Share on Twitter */
+"mAP_sharingMessageTwitterTitle" = "Поделиться в Twitter";
+
+/* Error! */
+"mAP_sharingTwitterFailedAlertTitle" = "Ошибка!";
+
+/* OK */
+"mAP_sharingTwitterSuccessAlertOkButtonTitle" = "OK";
+
+/* Sign in to an account */
+"mAP_SignInTitle" = "Войдите";
+
+/* Enter your first name.\n */
+"mAP_signUpError01" = "Введите имя\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Enter your last name.\n */
+"mAP_signUpError02" = "Введите фамилию\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* First and Last name match each other. This seems like a spam, please change Last or First name.\n */
+"mAP_signUpError03" = "Имя и Фамилия совпадают. Похоже на спам. Пожалуйста, проверьте Имя и Фамилию\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter correct email address.\n */
+"mAP_signUpError04" = "Введите корректный email\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter a password that at least 4 characters long.\n */
+"mAP_signUpError05" = "Длина пароля должна быть не менее 4 символов\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Passwords don't match.\n */
+"mAP_signUpError06" = "Пароли не совпадают\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mAP_signUpError07" = "Этот email уже используется. Пожалуйста, используйте другой email";
+
+/* Registration error. */
+"mAP_signUpError08" = "Ошибка регистрации";
+
+/* OK */
+"mAP_signUpErrorAlertOkButtonTitle" = "OK";
+
+/* Connection with Twitter failed! */
+"mAP_twitterFailed" = "Ошибка соединения с Twitter!";
+
+/* The message has been posted to your Twitter account. */
+"mAP_twitterPosted" = "Сообщение было опубликовано под Вашей учетной запиcью Twitter";
+
+/* --- module BarCode Scanner strings --- */
+
+/* Requires a camera to take pictures */
+"mBC_noCameraErrorAlertMessage" = "Для съемки изображений необходима камера";
+
+/* OK */
+"mBC_noCameraErrorAlertOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mBC_noCameraErrorAlertTitle" = "Камера недоступна";
+
+/* Open in a browser */
+"mBC_openInBrowser" = "Открыть в браузере";
+
+/* Cancel */
+"mBC_shareCancel" = "Отмена";
+
+/* Share via EMail */
+"mBC_shareEmail" = "Поделиться через EMail";
+
+/* Scanned QR-code from iPhone / iBuildApp */
+"mBC_shareEmailSubject" = "QR-код отсканирован при помощи iPhone / iBuildApp";
+
+/* Share via SMS */
+"mBC_shareSMS" = "Поделиться через СМС";
+
+/* Web search */
+"mBC_webSearch" = "Поиск в Интернете";
+
+/* --- module Coupons strings --- */
+
+/* can't download rss feed */
+"mC_errorLoadingRSSAlertMessage" = "Невозможно загрузить RSS";
+
+/* OK */
+"mC_errorLoadingRSSAlertOkButton" = "OK";
+
+/* error loading */
+"mC_errorLoadingRSSAlertTitle" = "Ошибка загрузки";
+
+/* Exp.date %@ */
+"mC_expDateString" = "Действует до";
+
+/* Coupons */
+"mC_pageTitle" = "Купоны";
+
+/* Read more... */
+"mC_readMoreLink" = "Еще...";
+
+/* --- module Calculator strings --- */
+
+/* maxValue */
+"mCalc_maxValue" = "Макс.знач.";
+
+/* minValue */
+"mCalc_minValue" = "Мин.знач.";
+
+/* Result: */
+"mCalc_resultLabel" = "Результат:";
+
+/* --- module CustomForm strings --- */
+
+/* Send */
+"mCF_sendButton" = "Отправить";
+
+/* NO */
+"mCF_switchOff" = "Нет";
+
+/* YES */
+"mCF_switchOn" = "Да";
+
+/* --- module Events strings --- */
+
+/* Add Event to Calendar */
+"mE_addContactButton" = "Добавить событие в календарь";
+
+/* Added %d notifications */
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"mE_addedMessage%@##{one}" = "Добавлено %@ уведомление";
+"mE_addedMessage%@##{few}" = "Добавлено %@ уведомления";
+"mE_addedMessage%@##{many}" = "Добавлено %@ уведомлений";
+"mE_addedMessage%@##{other}" = "Добавлено %@ уведомлений";
+/* Pluralized strings */
+
+/* OK */
+"mE_addedOkButtonTitle" = "OK";
+
+/* Adding to calendar is disabled */
+"mE_addingEventDisabledMessage" = "Добавление в календарь запрещено";
+
+/* Event already exists. */
+"mE_addingEventExistMessage" = "Событите уже существует";
+
+/* The event '%@' has been successfully added to your calendar */
+"mE_addingEventSuccessMessage" = "Событие '%@' успешно добавлено в календарь"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Cancel */
+"mE_addShareCancelButton" = "Отмена";
+
+/* Share Event via Email */
+"mE_addShareEmailButton" = "Поделиться событием через Email";
+
+/* Share Event via SMS */
+"mE_addShareSMSButton" = "Поделиться событием через СМС";
+
+/* in */
+"mE_in" = "в";
+
+/* Event info */
+"mE_messageSubject" = "Информация о событии";
+
+/* Do you want to add notifications? */
+"mE_notifyAddMessage" = "Хотите добавить уведомления о событиях?";
+
+/* No */
+"mE_notifyAddNoButton" = "Нет";
+
+/* Yes */
+"mE_notifyAddYesButton" = "Да";
+
+/* new notifications */
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+"mE_notifyCount%@##{one}" = "%@ новое уведомление";
+"mE_notifyCount%@##{few}" = "%@ новых уведомления";
+"mE_notifyCount%@##{many}" = "%@ новых уведомлений";
+"mE_notifyCount%@##{other}" = "%@ новых уведомлений";
+/* Pluralized strings */
+
+/* Events */
+"mE_pageTitle" = "События";
+
+/* read more */
+"mE_readMoreString" = "Еще";
+
+/* I just found a useful event: */
+"mE_shareMessage" = "Интересное событие:";
+
+/* OK */
+"mE_showMessageOkButtonTitle" = "OK";
+
+/* Event */
+"mE_showMessageTitle" = "Событие";
+
+/* View Details */
+"mE_viewDetails" = "Подробнее";
+
+/* --- module eCommerce strings --- */
+
+/* Back */
+"mEC_backButton" = "Назад";
+
+/* BUY */
+"mEC_buyButton" = "Купить";
+
+/* Failed to download. Please retry later */
+"mEC_downloadFailedMessage" = "Ошибка загрузки. Попробуйте позже";
+
+/* OK */
+"mEC_downloadFailedOkButtonTitle" = "OK";
+
+/* Download Failed */
+"mEC_downloadFailedTitle" = "Ошибка загрузки";
+
+/* Downloading */
+"mEC_downloadingMessage" = "Загрузка";
+
+/* There was a problem displaying product in iTunes */
+"mEC_iTunesProblemMessage" = "Невозможно получить данные о продукте из iTunes";
+
+/* Ok */
+"mEC_iTunesProblemOkButtonTitle" = "OK";
+
+/* In-app purchases are not allowed.\r\nPlease upgrade to iOS 6 or later */
+"mEC_Message" = "Для работы данной функции необходима iOS 6 или старше";
+
+/* No name */
+"mEC_noNameString" = "Без названия";
+
+/* Open */
+"mEC_openTitle" = "Открыть";
+
+/* OK */
+"mEC_purchaseNotAllowedOkButtonTitle" = "OK";
+
+/* Purchase */
+"mEC_purchaseNotAllowedTitle" = "Покупка";
+
+/* Product successfully purchased. Downloading content is available only in iOS6.0 or later version */
+"mEC_purchaseSuccessMessage" = "Продукт куплен. Загрузка контента возможна только в iOS 6 или старше";
+
+/* OK */
+"mEC_purchaseSuccessOkButtonTitle" = "OK";
+
+/* Restore */
+"mEC_restoreButtonTitle" = "Восстановить";
+
+/* In-app purchases are not allowed */
+"mEC_transactionFailedMessage" = "Совершение покупки невозможно";
+
+/* OK */
+"mEC_transactionFailedOkButtonTitle" = "OK";
+
+/* Purchase */
+"mEC_transactionFailedTitle" = "Купить";
+
+/* View */
+"mEC_viewTitle" = "Просмотр";
+
+/* --- module eMail strings --- */
+
+/* Sending Failed - Unknown Error */
+"mEM_sendingErrorMessage" = "Неизвестная ошибка отправки";
+
+/* Email */
+"mEM_sendingErrorTitle" = "Email";
+
+/* OK */
+"mEM_sendingSErrorOkButton" = "OK";
+
+/* Thank You - your information has been sent */
+"mEM_sendingSuccessMessage" = "Информация отправлена";
+
+/* OK */
+"mEM_sendingSuccessOkButton" = "OK";
+
+/* Sent from */
+"mEM_sentFrom" = "Отправлено с использованием";
+
+/* --- module FanWall strings --- */
+
+/* Back */
+"mFW_backButtonTitle" = "Назад";
+
+/* Photos */
+"mFW_backToPhotosButtonTitle" = "Фото";
+
+/* Replies */
+"mFW_backToRepliesPageButtonTitle" = "Ответы";
+
+/* Wall */
+"mFW_backToWallButtonTitle" = "Стена";
+
+/* You haven't enough permissions to create comment here! */
+"mFW_cantCommentAlertMessage" = "Недостаточно прав для создания комментария!";
+
+/* OK */
+"mFW_cantCommentAlertOkButtonTitle" = "OK";
+
+/* Choose Existing Photo */
+"mFW_choosePhotoButtomTitle" = "Галерея";
+
+/* Clear */
+"mFW_clearButtonTitle" = "Очистить";
+
+/* Comments */
+"mFW_commentsPageTitle" = "Комментарии";
+
+/* Create New Account */
+"mFW_CreateNewAccount" = "Создать новую учетную запись";
+
+/* Delete */
+"mFW_deleteButtonTitle" = "Удалить";
+
+/* Email */
+"mFW_emailFieldPlaceholder" = "Email";
+
+/* I have an account */
+"mFW_HaveAnAccount" = "У меня уже есть учетная запись";
+
+/* Turn on Location Services to get coordinates */
+"mFW_locationOffAlertMessage" = "Для определения координат включите геолокацию";
+
+/* OK */
+"mFW_locationOffAlertOkButtonTitle" = "OK";
+
+/* Location Services is Turned off */
+"mFW_locationOffAlertTitle" = "Геолокация отключена";
+
+/* Login */
+"mFW_loginButtonTitle" = "Войти";
+
+/* Make sure you've entered correct email address and password (min 4 symbols) */
+"mFW_loginError01" = "Убедитесь, что Вы ввели корректный email и пароль (минимум 4 символа)";
+
+/* The username and password did not match\nour records, please try again */
+"mFW_loginError03" = "Имя пользователя и пароль не совпадают\nс нашими данными, попробуйте еще раз"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mFW_loginError03_mailInUse" = "Этот email уже используется. Пожалуйста, используйте другой email.";
+
+/* Registration error. */
+"mFW_loginError03_registrationError" = "Ошибка регистрации";
+
+/* Passwords don't match.\n */
+"mFW_loginError06" = "Пароли не совпадают\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* OK */
+"mFW_loginErrorAlertOkButtonTitle" = "OK";
+
+/* Login with Facebook */
+"mFW_loginFacebookButtonTitle" = "Войти, используя Facebook";
+
+/* Email */
+"mFW_loginPageTitle" = "Email";
+
+/* Login */
+"mFW_LoginTitle" = "Войти";
+
+/* Login with Twitter */
+"mFW_loginTwitterButtonTitle" = "Войти, используя Twitter";
+
+/* OK */
+"mFW_mailInUseOkButtonTitle" = "OK";
+
+/* Map */
+"mFW_mapTabTitle" = "Карта";
+
+/* Near me */
+"mFW_nearMeTabTitle" = "Рядом";
+
+/* Requires a camera to take pictures */
+"mFW_noCameraMessage" = "Для съемки изображений необходима камера";
+
+/* OK */
+"mFW_noCameraOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mFW_noCameraTitle" = "Камера недоступна";
+
+/* No messages yet */
+"mFW_noMessageString" = "Пока нет сообщений";
+
+/* There are not messages yet. */
+"mFW_noMessagesYetString" = "Сообщений пока нет";
+
+/* or */
+"mFW_Or" = "или";
+
+/* Password */
+"mFW_passwordFieldPlaceholder" = "Пароль";
+
+/* Cancel */
+"mFW_photoCancelButtomTitle" = "Отмена";
+
+/* Photos */
+"mFW_photosTabTitle" = "Фото";
+
+/* Post */
+"mFW_postButtonTitle" = "Отправить";
+
+/* Post your comment! */
+"mFW_postCommentButtonTitle" = "Отправить комментарий!";
+
+/* Posted by  */
+"mFW_postedByPhotoCaption" = "Отправитель: ";
+
+/* Sending failed. Please try again */
+"mFW_postMessageFailedAlertMessage" = "Ошибка отправки. Попробуйте еще раз";
+
+/* OK */
+"mFW_postMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Post a reply! */
+"mFW_postReplyButtonTitle" = "Отправить ответ!";
+
+/* Facebook */
+"mFW_profileFacebookButtonTitle" = "Facebook";
+
+/* iBuildApp */
+"mFW_profileiBuildAppButtonTitle" = "iBuildApp";
+
+/* Twitter */
+"mFW_profileTwitterButtonTitle" = "Twitter";
+
+/* Recent */
+"mFW_recentTabTitle" = "Последние";
+
+/* Replies */
+"mFW_repliesPageTitle" = "Ответы";
+
+/* Send Message */
+"mFW_sendMessageButtonTitle" = "Отправить сообщение";
+
+/* Confirm Password */
+"mFW_signUp_confirmPasswordPlaceholder" = "Подтверждение пароля";
+
+/* Email */
+"mFW_signUp_emailPlaceholder" = "Email";
+
+/* First name */
+"mFW_signUp_firstNamePlaceholder" = "Имя";
+
+/* Last name */
+"mFW_signUp_lastNamePlaceholder" = "Фамилия";
+
+/* Password */
+"mFW_signUp_passwordPlaceholder" = "Пароль";
+
+/* Sign Up */
+"mFW_signupButtonTitle" = "Регистрация";
+
+/* Please enter correct email address.\n */
+"mFW_signUpError04" = "Введите корректный email\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter a password that at least 4 characters long.\n */
+"mFW_signUpError05" = "Длина пароля должна быть не менее 4 символов\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mFW_signUpError07" = "Этот email уже используется. Пожалуйста, используйте другой email.";
+
+/* Registration error. */
+"mFW_signUpError08" = "Ошибка регистрации";
+
+/* OK */
+"mFW_signUpErrorAlertOkButtonTitle" = "OK";
+
+/* Sign Up */
+"mFW_signupPageTitle" = "Регистрация";
+
+/* Take Photo */
+"mFW_takePhotoButtomTitle" = "Камера";
+
+/* Turn on location services to allow app to determine your locations */
+"mFW_turnOnLocationAlertMessage" = "Для определения координат включите геолокацию";
+
+/* OK */
+"mFW_turnOnLocationAlertOkButtonTitle" = "OK";
+
+/* Wall */
+"mFW_wallTabTitle" = "Стена";
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+"mFW_proflie_%@ posts##{one}" = "%@ сообщение";
+"mFW_proflie_%@ posts##{few}" = "%@ сообщения";
+"mFW_proflie_%@ posts##{many}" = "%@ сообщений";
+"mFW_proflie_%@ posts##{other}" = "%@ сообщений";
+"mFW_proflie_%@ comments##{one}" = "%@ комментарий";
+"mFW_proflie_%@ comments##{few}" = "%@ комментария";
+"mFW_proflie_%@ comments##{many}" = "%@ комментариев";
+"mFW_proflie_%@ comments##{other}" = "%@ комментариев";
+/* Pluralized strings */
+
+
+/* --- module MultiContacts strings --- */
+
+/* Search by contact info */
+"mMC_searchBarplaceholder" = "Найти контакт";
+
+/* Add Contact to Address Book */
+"mMC_addContactButton" = "Добавить контакт в Адресную книгу";
+
+/* Address */
+"mMC_addressPageTitle" = "Адрес";
+
+/* Cancel */
+"mMC_addShareCancelButton" = "Отмена";
+
+/* Share Contact via Email */
+"mMC_addShareEmailButton" = "Поделиться через Email";
+
+/* Share Contact via SMS */
+"mMC_addShareSMSButton" = "Поделиться через СМС";
+
+/* Address */
+"mMC_detailsTitle" = "Адрес";
+
+/* Can not add contact without phone number! */
+"mMC_emptyPhoneNumberAddMessage" = "Номер телефона отсутствует. Контакт добавить невозможно";
+
+/* OK */
+"mMC_emptyPhoneNumberAddOkButtonTitle" = "OK";
+
+/* Error! */
+"mMC_emptyPhoneNumberAddTitle" = "Ошибка!";
+
+/* Empty phone number! */
+"mMC_emptyPhoneNumberCallMessage" = "Отсутствует номер телефона!";
+
+/* OK */
+"mMC_emptyPhoneNumberCallOkButtonTitle" = "OK";
+
+/* Error! */
+"mMC_emptyPhoneNumberCallTitle" = "Ошибка!";
+
+/* Homepage */
+"mMC_homePageTitle" = "Домашняя";
+
+/* Address */
+"mMC_messageAddressString" = "Адрес";
+
+/* Email */
+"mMC_messageEmailString" = "Email";
+
+/* Homepage */
+"mMC_messageHomepageString" = "Домашняя страница";
+
+/* Name */
+"mMC_messageNameString" = "Имя";
+
+/* Phone */
+"mMC_messagePhoneString" = "Телефон";
+
+/* Contact info */
+"mMC_messageSubject" = "Контактная информация";
+
+/* Add to Contacts */
+"mMC_selectActionAdd" = "Добавить в Контакты";
+
+/* Call */
+"mMC_selectActionCall" = "Позвонить";
+
+/* Cancel */
+"mMC_selectActionCancel" = "Отмена";
+
+
+/* --- module PDF Reader strings --- */
+
+/* Done */
+"mPDF_doneButtonTitle" = "Готово";
+
+
+
+/* Cannot load RSS feed */
+"mRSS_errorLoadingRSSMessage" = "Невозможно загрузить RSS";
+
+/* OK */
+"mRSS_errorLoadingRSSOkButtonTitle" = "OK";
+
+/* Error */
+"mRSS_errorLoadingRSSTitle" = "Ошибка";
+
+/* Play media */
+"mRSS_playMediaLink" = "Играть";
+
+/* Read more... */
+"mRSS_readMoreLink" = "Еще...";
+
+/* Cancel */
+"mRSS_shareCancel" = "Отмена";
+
+/* Share via EMail */
+"mRSS_shareEmail" = "Поделиться через EMail";
+
+/* Share via SMS */
+"mRSS_shareSMS" = "Поделиться через СМС";
+
+/* Excellent news */
+"mRSS_sharingEmailSubject" = "Отличная новость";
+
+/* I just read excellent news! */
+"mRSS_sharingMessage" = "Я только что прочитал отличную новость!";
+
+/* --- module RSS Collector strings --- */
+
+/* Add Content */
+"mRSSC_Add Content" = "Add Content";
+
+/* Added */
+"mRSSC_Added" = "Added";
+
+/* Cancel */
+"mRSSC_Cancel" = "Cancel";
+
+/* Continue */
+"mRSSC_Continue" = "Continue";
+
+/* default username */
+"mRSSC_default username" = "default username";
+
+/* Do you want to remove */
+"mRSSC_Do you want to remove" = "Do you want to remove";
+
+/* Done */
+"mRSSC_Done" = "Done";
+
+/* Done */
+"mRSSC_doneButtonCaption" = "Done";
+
+/* Edit Page Name */
+"mRSSC_Edit Page Name" = "Edit Page Name";
+
+/* Edit */
+"mRSSC_editButtonCaption" = "Edit";
+
+/* Email hasn't been setup on your iPad. */
+"mRSSC_Email hasn't been setup on your iPad." = "Email hasn't been setup on your iPad.";
+
+/* FACEBOOK */
+"mRSSC_FACEBOOK" = "FACEBOOK";
+
+/* Mail Not Setup */
+"mRSSC_Mail Not Setup" = "Mail Not Setup";
+
+/* No */
+"mRSSC_No" = "No";
+
+/* Read on Web */
+"mRSSC_readOnWebLink" = "Read on Web";
+
+/* Saved */
+"mRSSC_savedPopowerMessage" = "Saved";
+
+/* Select Category */
+"mRSSC_Select Category" = "Select Category";
+
+/* SHARE */
+"mRSSC_SHARE" = "SHARE";
+
+/* SHARE ON */
+"mRSSC_SHARE ON" = "SHARE ON";
+
+/* START READING */
+"mRSSC_START READING" = "START READING";
+
+/* TWITTER */
+"mRSSC_TWITTER" = "TWITTER";
+
+/* Yes */
+"mRSSC_Yes" = "Yes";
+
+/* Your comment here */
+"mRSSC_Your comment here" = "Your comment here";
+
+/* --- module SoundCloud strings --- */
+
+/* Do you wish to play music in background? */
+"mSC_backgroundRequestMessage" = "Проигрывать музыку в фоне?";
+
+/* No */
+"mSC_backgroundRequestMessageNo" = "Нет";
+
+/* Yes */
+"mSC_backgroundRequestMessageYes" = "Да";
+
+/* Cannot open media stream */
+"mSC_cannotOpenMediaMessage" = "Невозможно открыть медиа поток";
+
+/* Ok */
+"mSC_cannotOpenMediaMessageOk" = "OK";
+
+/* Post */
+"mSC_postPostButtonTitle" = "Отправить";
+
+/* The message has been posted to your Facebook wall. */
+"mSC_shareFB&TSuccessAlertMessage" = "Сообщение было опубликовано на Вашей стене Facebook";
+
+/* OK */
+"mSC_shareFB&TSuccessAlertTitle" = "OK";
+
+/* Share on Facebook */
+"mSC_sharingMessageFacebookTitle" = "Поделиться в Facebook";
+
+/* Share on Twitter */
+"mSC_sharingMessageTwitterTitle" = "Поделиться в Twitter";
+
+/* Connection with Twitter failed! */
+"mSC_twitterFailed" = "Ошибка соединения с Twitter!";
+
+/* The message has been posted to your Twitter account. */
+"mSC_twitterPosted" = "Сообщение было опубликовано под Вашей учетной запиcью Twitter";
+
+/* --- module TakePicture strings --- */
+
+/* Can't save the image! */
+"mTP_errorSavingPhotoMessage" = "Изображение не сохранено!";
+
+/* OK */
+"mTP_errorSavingPhotoOkButtonTitle" = "OK";
+
+/* Error! */
+"mTP_errorSavingPhotoTitle" = "Ошибка!";
+
+/* Requires a camera to take pictures */
+"mTP_noCameraMessage" = "Для съемки изображений необходима камера";
+
+/* OK */
+"mTP_noCameraOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mTP_noCameraTitle" = "Камера недоступна";
+
+/* Post */
+"mTP_postButtonTitle" = "Отправить";
+
+/* Caption */
+"mTP_postFormTitle" = "Заголовок";
+
+/* Retake */
+"mTP_retake" = "Заново";
+
+/* Save */
+"mTP_save" = "Сохр.";
+
+/* OK */
+"mTP_sendingEmailErrorAlertOkButtonTitle" = "OK";
+
+/* Error! */
+"mTP_sendingEmailErrorTitle" = "Ошибка!";
+
+/* OK */
+"mTP_sendingEmailSuccessAlertOkButtonTitle" = "OK";
+
+/* New picture from camera */
+"mTP_sharePhotoEmailSubject" = "Новое фото";
+
+/* The picture has been posted to your Facebook wall. */
+"mTP_sharingFBSuccessAlertMessage" = "Фотография была опубликована на Вашей стене Facebook";
+
+/* OK */
+"mTP_sharingFBSuccessAlertMessageOkButtonTitle" = "OK";
+
+/* The picture has been saved to your iPhone. */
+"mTP_successSavingPhotoMessage" = "Фотография была сохранена";
+
+/* OK */
+"mTP_successSavingPhotoOkButtonTitle" = "OK";
+
+/* Connection with Twitter failed! */
+"mTP_twitterFailed" = "Ошибка соединения с Twitter!";
+
+/* The message has been posted to your Twitter account. */
+"mTP_twitterPosted" = "Сообщение было опубликовано под Вашей учетной запиcью Twitter";
+
+
+/* --- module Twitter strings --- */
+
+/* ago */
+"mTwitter_agoString" = "назад";
+
+
+/* h */
+"mTwitter_timeComponent_hours" = "ч";
+
+/* m */
+"mTwitter_timeComponent_minutes" = "м";
+
+/* s */
+"mTwitter_timeComponent_seconds" = "с";
+
+
+
+/* Direct Message */
+"mTwiter_directMessageTitle" = "Личное сообщение";
+
+/* Grab image */
+"mTwiter_grabImageActionSheetTitle" = "Получить изображение";
+
+/* Album */
+"mTwiter_grabImageAlbumButtonTitle" = "Галерея";
+
+/* Camera */
+"mTwiter_grabImageCameraButtonTitle" = "Камера";
+
+/* Cancel */
+"mTwiter_grabImageCancelButtonTitle" = "Отмена";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mTwiter_messageShowLinkAddition" = "Опубликовано через iBuildApp http://ibuildapp.com.";
+
+/* New Status */
+"mTwiter_newStatusTitle" = "Новый статус";
+
+/* Requires a camera to take pictures */
+"mTwiter_noCameraAlertMessage" = "Для съемки изображений необходима камера";
+
+/* OK */
+"mTwiter_noCameraAlertOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mTwiter_noCameraAlertTitle" = "Камера недоступна";
+
+/* Reply */
+"mTwiter_replyTitle" = "Ответ";
+
+/* Retweet */
+"mTwiter_retweetTitle" = "Retweet";
+
+/* Connection failed! */
+"mTwitter_conectionFailedMessage" = "Ошибка подключения!";
+
+/* OK */
+"mTwitter_conectionFailedOkButtonTitle" = "OK";
+
+/*  from  */
+"mTwitter_fromString" = " через ";
+
+/* New Status */
+"mTwitter_newStatus" = "Cтатус";
+
+/* Send */
+"mTwitter_sendButtonTitle" = "Отправить";
+
+/* I just read in twitter \"%@\"(%@) */
+"mTwitter_SMSBody" = "Я только что прочитал в Twitter \"%@\"(%@)"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* XML Error */
+"mTwitter_XMLErrorMessage" = "Ошибка XML";
+
+/* OK */
+"mTwitter_XMLErrorOkButtonTitle" = "OK";
+
+
+/* Tweet */
+"mTwitter_TweetPageTitle" = "Твит";
+
+/* Account */
+"mTwitter_AccountPageTitle" = "Профиль";
+
+/* Follow */
+"mTwitter_NavBar_FollowBtn" = "Подписаться";
+
+
+/* Mail tweet */
+"mTwitter_ShareMenu_MailTweet" = "Отправить почтой";
+
+/* Copy a link for a tweet */
+"mTwitter_ShareMenu_CopyLink" = "Копировать ссылку";
+
+/* Undo favorite */
+"mTwitter_FavoriteMenu_UndoFavorite" = "Удалить из избранного";
+
+/* Undo retweet */
+"mTwitter_RetweetMenu_UndoRetweet" = "Отменить ретвит";
+
+/* Unfollow user */
+"mTwitter_FollowMenu_UnfollowUser" = "Отписаться";
+
+/* Follow user */
+"mTwitter_FollowMenu_FollowUser" = "Подписаться";
+
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"mTwitterPluralized_TweetDetail_TweetsQty##{one}" = "ТВИТ";
+"mTwitterPluralized_TweetDetail_TweetsQty##{few}" = "ТВИТА";
+"mTwitterPluralized_TweetDetail_TweetsQty##{many}" = "ТВИТОВ";
+"mTwitterPluralized_TweetDetail_TweetsQty##{other}" = "ТВИТОВ";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{one}" = "ИНТЕРЕС";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{few}" = "ИНТЕРЕСА";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{many}" = "ИНТЕРЕСОВ";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{other}" = "ИНТЕРЕСОВ";
+"mTwitterPluralized_TweetDetail_FollowersQty##{one}" = "ПОДПИСЧИК";
+"mTwitterPluralized_TweetDetail_FollowersQty##{few}" = "ПОДПИСЧИКА";
+"mTwitterPluralized_TweetDetail_FollowersQty##{many}" = "ПОДПИСЧИКОВ";
+"mTwitterPluralized_TweetDetail_FollowersQty##{other}" = "ПОДПИСЧИКОВ";
+/* Pluralized strings */
+
+
+/* --- module Web strings --- */
+
+/* Sent from iBuildApp */
+"mWeb_sentFromiBuildApp" = "Опубликовано через iBuildApp";
+
+
+/* --- Login Screen strings --- */
+
+"loginScreen_approveOk" = "Регистрация приложения прошла успешно";
+"loginScreen_register" = "Регистрация";
+"loginScreen_logIn"= "Войти";
+"loginScreen_name" = "Имя";
+"loginScreen_email" = "Email";
+"loginScreen_password" = "Пароль";
+"loginScreen_confirmPassword" = "Подтвердите пароль";
+"loginScreen_rememberMe" = "Запомнить меня";
+"loginScreen_needToRegister" = "Необходимо зарегестрироваться";
+"loginScreen_forgotMyPassword" = "Забыли пароль?";
+"loginScreen_validationName" = "Введите имя пользователя";
+"loginScreen_validationEmail" = "Проверьте правильность введеных данных";
+"loginScreen_validationPasswordLength" = "Пароль должен содержать минимум 6 символов";
+"loginScreen_validationPasswordMatch" = "Пожалуйста, введите одинаковые пароли";
+"loginScreen_noInet" = "Ошибка отправки запроса. Проверьте соединение с интернетом.";
+"loginScreen_loginFail" = "Не удалось войти в аккаунт. Пожалуйста попробуйте еще раз, смените пароль или зарегистрируйтесь";
+"loginScreen_registrationEmailVerificationAndOwnerApproval" = "Регистрация завершена. На ваш Email придет письмо для подтверждения регистрации. Пройдите по ссылке для того, чтобы завершить регистрацию и начать пользоваться приложением";
+"loginScreen_registrationEmailVerification" = "Регистрация завершена. На ваш Email придет письмо для подтверждения регистрации. Пройдите по ссылке для того, чтобы завершить регистрацию и начать пользоваться приложением";
+"loginScreen_registrationOwnerApproval" = "Регистрация завершена. Вы получите уведомление о подтверждении регистрации.";
+"loginScreen_emailIsBusy" = "Данный Email уже зарегистрирован в системе";
+"loginScreen_passwordSended" = "Письмо с новым паролем отправлено на ваш Email";
+"loginScreen_sendPassword" = "Отправить";
+"loginScreen_typeEmailForPassword" = "Для того, чтобы сменить пароль, введите Email, который вы использовали при регистрации";
+
+
+/* --- module Facebook strings --- */
+
+"mFacebook_commentsPageTitle" = "Коментарии";
+
+/* --- DateTime components --- */
+
+/* h */
+"core_timeComponent_hours" = "ч";
+
+/* m */
+"core_timeComponent_minutes" = "м";
+
+/* s */
+"core_timeComponent_seconds" = "с";

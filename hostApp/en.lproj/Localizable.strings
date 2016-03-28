@@ -1,1 +1,1375 @@
+/* --- core strings --- */
+
+/* Allow iBuildApp access your address book by going to  Settings > Privacy > Contacts */
+"core_ABAccessDeniedAlertMessage" = "Allow iBuildApp access your address book by going to Settings > Privacy > Contacts";
+
+/* OK */
+"core_ABAccessDeniedAlertOkButtonTitle" = "OK";
+
+/* Access denied */
+"core_ABAccessDeniedAlertTitle" = "Access denied";
+
+/* Adding to calendar is disabled */
+"core_addingToCalendarDisabledMessage" = "Adding to calendar is disabled";
+
+/* Add to Contacts */
+"core_callNumberAlertAddToContactsButtonTitle" = "Add to Contacts";
+
+/* Call */
+"core_callNumberAlertCallButtonTitle" = "Call";
+
+/* Cancel */
+"core_callNumberAlertCancelButtonTitle" = "Cancel";
+
+/* This device not configured to send mail */
+"core_cannotSendEmailAlertMessage" = "This device not configured to send mail";
+
+/* OK */
+"core_cannotSendEmailAlertOkButtonTitle" = "OK";
+
+/* Mail cannot be send */
+"core_cannotSendEmailAlertTitle" = "Mail cannot be send";
+
+/* This device not configured to send SMS */
+"core_cannotSendSMSAlertMessage" = "This device not configured to send SMS";
+
+/* OK */
+"core_cannotSendSMSAlertOkButtonTitle" = "OK";
+
+/* SMS cannot be send */
+"core_cannotSendSMSAlertTitle" = "SMS cannot be send";
+
+/* Contact has been added to the Address Book. */
+"core_contactAddedAlertMessage" = "Contact has been added to the Address Book.";
+
+/* OK */
+"core_contactAddedAlertOkButtonTitle" = "OK";
+
+/* Contact already exists. */
+"core_contactExistsAlertMessage" = "Contact already exists.";
+
+/* OK */
+"core_contactExistsAlertOkButtonTitle" = "OK";
+
+/* Can not add contact without phone number! */
+"core_emptyPhoneNumberAddMessage" = "Can not add contact without phone number!";
+
+/* OK */
+"core_emptyPhoneNumberAddOkButtonTitle" = "OK";
+
+/* The event '%@' has been successfully added to your calendar */
+"core_eventAddedMessage" = "The event '%@' has been successfully added to your calendar"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Event already exists. */
+"core_eventAlreadyExistsMessage" = "Event already exists.";
+
+/* OK */
+"core_eventGeneralAlertOkButtonTitle" = "OK";
+
+/* Event */
+"core_eventGeneralAlertTitle" = "Event";
+
+/* Just Now */
+"core_formatTimeIntervalJustNow" = "Just Now";
+
+/* 1 hour ago */
+"core_formatTimeIntervalOneHourAgo" = "1 hour ago";
+
+/* 1 minute ago */
+"core_formatTimeIntervalOneMinuteAgo" = "1 minute ago";
+
+/* days ago */
+"core_formatTimeIntervalSomeDaysAgo" = "days ago";
+
+/* hours ago */
+"core_formatTimeIntervalSomeHoursAgo" = "hours ago";
+
+/* minutes ago */
+"core_formatTimeIntervalSomeMinutesAgo" = "minutes ago";
+
+/* Yesterday */
+"core_formatTimeIntervalYesterday" = "Yesterday";
+
+/* To retrieve actual content, you must have an Internet connection. */
+"core_internetRequiredAlertMessage" = "To retrieve actual content, you must have an Internet connection.";
+
+/* OK */
+"core_internetRequiredAlertOkButtonTitle" = "OK";
+
+/* Last Updated: %@ */
+"core_lastUpdatedLabel" = "Last Updated: %@"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Loading... */
+"core_loadingMessage" = "Loading...";
+
+/* Sent from */
+"core_messageTextShowLinkAddition" = "Sent from";
+
+/* Cancel */
+"core_photoBrowserCancelButtonTitle" = "Cancel";
+
+/* Copied */
+"core_photoBrowserCopiedMessage" = "Copied";
+
+/* Copying */
+"core_photoBrowserCopyingMessage" = "Copying";
+
+/* Done */
+"core_photoBrowserDoneButtonTitle" = "Done";
+
+/* Dismiss */
+"core_photoBrowserEmailAlertDismissButtonTitle" = "Dismiss";
+
+/* Email failed to send. Please try again. */
+"core_photoBrowserEmailAlertMessage" = "Email failed to send. Please try again.";
+
+/* Email */
+"core_photoBrowserEmailAlertTitle" = "Email";
+
+/* Can't save the image! */
+"core_photoBrowserErrorSavingPhotoAlertMessage" = "Can't save the image!";
+
+/* OK */
+"core_photoBrowserErrorSavingPhotoAlertOKButtonTitle" = "OK";
+
+/* Error! */
+"core_photoBrowserErrorSavingPhotoAlertTitle" = "Error!";
+
+/* Failed */
+"core_photoBrowserFailedMessage" = "Failed";
+
+/* of */
+"core_photoBrowserOfString" = "of";
+
+/* Photo */
+"core_photoBrowserPhotoString" = "Photo";
+
+/* Preparing */
+"core_photoBrowserPreparingMessage" = "Preparing";
+
+/* Saved */
+"core_photoBrowserSavedMessage" = "Saved";
+
+/* Save picture */
+"core_photoBrowserSavePictureButton" = "Save picture";
+
+/* IB Side bar action for photo browser */
+"core_photoBrowserSideBarSaveAction" = "Save picture";
+
+/* Saving */
+"core_photoBrowserSavingMessage" = "Saving";
+
+/* The picture has been saved to your iPhone. */
+"core_photoBrowserSuccessSavingPhotoAlertMessabe" = "The picture has been saved to your iPhone.";
+
+/* OK */
+"core_photoBrowserSuccessSavingPhotoAlertOKButtonTitle" = "OK";
+
+/* Powered by iBuildApp.com */
+"core_poweredByIBuildAppLabel" = "Created using iBuildApp.com. Create Your Own App"; /*"Powered by iBuildApp.com";*/
+
+/* Pull down to refresh... */
+"core_pullDownToRefreshMessage" = "Pull down to refresh...";
+
+/* Release to refresh... */
+"core_releaseToRefreshMessage" = "Release to refresh...";
+
+/* Home */
+"core_rootViewControllerTitle" = "Home";
+
+/* Search string \"%@\" not found! */
+"core_searchStringNotFoundMessage" = "Search string \"%@\" not found!"; // symbols %@ and \ are needed for correct string generation, please don't remove!
+
+/* START */
+"core_singleModuleLoadButton" = "START";
+
+/* Twitter Login */
+"core_twitterLoginPageTitle" = "Twitter Login";
+
+/* Please Wait... */
+"core_twitterLoginPleaseWaitMessage" = "Please Wait...";
+
+/* Select and Copy the PIN */
+"core_twitterLoginSelectAndCopyPinMessage" = "Select and Copy the PIN";
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{one}" = "%@ minute";
+"core_formatTimeIntervalSomeMinutes_%@ minutes##{other}" = "%@ minutes";
+"core_formatTimeIntervalSomeHours_%@ hours##{one}" = "%@ hour";
+"core_formatTimeIntervalSomeHours_%@ hours##{other}" = "%@ hours";
+"core_formatTimeIntervalSomeDays_%@ days##{one}" = "%@ day";
+"core_formatTimeIntervalSomeDays_%@ days##{other}" = "%@ days";
+"core_formatTimeIntervalSomeMonths_%@ months##{one}" = "%@ month";
+"core_formatTimeIntervalSomeMonths_%@ months##{other}" = "%@ months";
+
+"core_formatTimeIntervalSomeMinutesAgo_%@ minutes ago##{other}" = "%@ minutes ago";
+"core_formatTimeIntervalSomeHoursAgo_%@ hours ago##{other}" = "%@ hours ago";
+"core_formatTimeIntervalSomeDaysAgo_%@ days ago##{other}" = "%@ days ago";
+
+
+"core_navigationBackButtonTitle" = "Back";
+/* Pluralized strings */
+
+
+/* --- Push Notifications --- */
+
+/* The app content has changed. Please restart the app: close the app and open it again. */
+"core_pushNSChangeContentNotificationMessage" = "The app content has changed. Please restart the app: close the app and open it again.";
+
+
+/* --- general strings --- */
+
+/* Cellular Data is Turned off */
+"general_cellularDataTurnedOff" = "Cellular Data is Turned off";
+
+/* Turn on cellular data or use Wi-Fi to access data */
+"general_cellularDataTurnOnMessage" = "Turn on cellular data or use Wi-Fi to access data";
+
+/* OK */
+"general_defaultButtonTitleOK" = "OK";
+
+/* Error sending email */
+"general_sendingEmailFailedAlertMessage" = "Error sending email";
+
+/* OK */
+"general_sendingEmailFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending email */
+"general_sendingEmailFailedAlertTitle" = "Error sending email";
+
+/* OK */
+"general_sendingMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending sms */
+"general_sendingSMSFailedAlertMessage" = "Error sending sms";
+
+/* OK */
+"general_sendingSMSFailedAlertOkButtonTitle" = "OK";
+
+/* Error sending sms */
+"general_sendingSMSFailedAlertTitle" = "Error sending sms";
+
+/* Cancel */
+"general_sharingCancelButtonTitle" = "Cancel";
+
+/* Email */
+"general_sharingEmailButtonTitle" = "Email";
+
+/* Facebook */
+"general_sharingFacebookButtonTitle" = "Facebook";
+
+/* Message */
+"general_sharingMessageButtonTitle" = "Message";
+
+/* Save Picture */
+"general_sharingSaveButtonTitle" = "Save Picture";
+
+/* No Thanks */
+"general_sharingNoThanksButtonTitle" = "No Thanks";
+
+/* Twitter */
+"general_sharingTwitterButtonTitle" = "Twitter";
+
+/* Error! */
+"general_sharingTwitterFailedAlertTitle" = "Error!";
+
+/* OK */
+"general_sharingTwitterSuccessAlertOkButtonTitle" = "OK";
+
+
+/* --- auth_Share strings --- */
+/* Cannot access Twitter Profile */
+"auth_Share_CannotAccessTwitterProfile" = "Cannot access Twitter Profile";
+
+
+
+/* --- module AudioPlayer strings --- */
+
+/* At */
+"core_formatTimeIntervalAt" = "at";
+
+/* Some */
+"authShare_shareEMailMessageSubjectPersonPlaceholder" = "Some";
+
+/* %@ wants to share with you */
+"mAP_shareEMailMessageSubject" = "%@ wants to share with you"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Write a comment */
+"mAP_messageInputPlaceholder" = "Write a comment";
+
+/* Post */
+"mAP_messageInputButtonTitle" = "Post";
+
+/* Add Comment... */
+"mAP_addCommentMessage" = "Add Comment...";
+
+/* Back */
+"mAP_backButtonTitle" = "Back";
+
+/* Cannot open media stream */
+"mAP_cannotOpenMediaMessage" = "Cannot open media stream";
+
+/* Ok */
+"mAP_cannotOpenMediaMessageOk" = "Ok";
+
+/* Comments */
+"mAP_commentsLabel" = "Comments";
+
+/* Comments */
+"mAP_commentsPageTitle" = "Comments";
+
+/* Create New Account */
+"mAP_CreateNewAccount" = "Create New Account";
+
+/* Email */
+"mAP_emailFieldPlaceholder" = "Email";
+
+/* I have an account */
+"mAP_HaveAnAccount" = "I have an account";
+
+/* Liked on Facebook */
+"mAP_likedFB" = "Liked on Facebook";
+
+/* Like */
+"mAP_likeInCommentsButton" = "Like";
+
+/* Login */
+"mAP_loginButtonTitle" = "Login";
+
+/* Login with Email */
+"mAP_loginEmailButtonTitle" = "Login with Email";
+
+/* Please enter a password that at least 4 characters long\n */
+"mAP_loginError01" = "Make sure you've entered correct email address and password (min 4 symbols)\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please  enter correct email address\n */
+"mAP_loginError02" = "Please  enter correct email address\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* The username and password did not match\nour records, please try again */
+"mAP_loginError03" = "The username and password did not match our records, please try again"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* OK */
+"mAP_loginErrorAlertOkButtonTitle" = "OK";
+
+/* Login with Facebook */
+"mAP_loginFacebookButtonTitle" = "Login with Facebook";
+
+/* Cancel */
+"mAP_loginFBRequiredCancel" = "Cancel";
+
+/* Log In */
+"mAP_loginFBRequiredLogIn" = "Log In";
+
+/* You must be logged in to Facebook to like this item */
+"mAP_loginFBRequiredMessage" = "You must be logged in to Facebook to like this item";
+
+/* Log In Required */
+"mAP_loginFBRequiredTitle" = "Log In Required";
+
+/* Login with iBuildApp */
+"mAP_loginIBAButtonTitle" = "Login with iBuildApp";
+
+/* Login */
+"mAP_LoginTitle" = "Login";
+
+/* Login with Twitter */
+"mAP_loginTwitterButtonTitle" = "Login with Twitter";
+
+/* Cancel */
+"mAP_loginTWRequiredCancel" = "Cancel";
+
+/* You must be logged in to Twitter to like this item */
+"mAP_loginTwRequiredMessage" = "You must be logged in to Twitter to like this item";
+
+/* Log In Required */
+"mAP_loginTwRequiredTitle" = "Log In Required";
+
+/* There are no comments yet */
+"mAP_noCommentsLabel" = "There are no comments yet";
+
+/* There are no replies yet */
+"mAP_noRepliesLabel" = "There are no replies yet";
+
+/* or */
+"mAP_Or" = "or";
+
+/* Password */
+"mAP_passwordFieldPlaceholder" = "Password";
+
+/* Clear */
+"mAP_postClearButtonTitle" = "Clear";
+
+/* Cannot send empty message */
+"mAP_cannotSendEmpty" = "Cannot send empty message";
+
+/* Sending failed. Please try again */
+"mAP_postMessageFailedAlertMessage" = "Sending failed. Please try again";
+
+/* OK */
+"mAP_postMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Post */
+"mAP_postPostButtonTitle" = "Post";
+
+/* Replies */
+"mAP_repliesPageTitle" = "Replies";
+
+/* OK */
+"mAP_sendingMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mAP_shareEMailMessageShowLinkAddition" = "Posted via iBuildApp http://ibuildapp.com.";
+
+/* OK */
+"mAP_shareFB&TErrorAlertOkButtonTitle" = "OK";
+
+/* Error */
+"mAP_shareFB&TErrorAlertTitle" = "Error";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mAP_shareFB&TMessageShowLinkAddition" = "Posted via iBuildApp http://ibuildapp.com.";
+
+/* The message has been posted to your Facebook wall. */
+"mAP_shareFB&TSuccessAlertMessage" = "The message has been posted to your Facebook wall.";
+
+/* OK */
+"mAP_shareFB&TSuccessAlertTitle" = "OK";
+
+/* Share on Facebook */
+"mAP_sharingMessageFacebookTitle" = "Share on Facebook";
+
+/* Share on Twitter */
+"mAP_sharingMessageTwitterTitle" = "Share on Twitter";
+
+/* Error! */
+"mAP_sharingTwitterFailedAlertTitle" = "Error!";
+
+/* OK */
+"mAP_sharingTwitterSuccessAlertOkButtonTitle" = "OK";
+
+/* Sign in to an account */
+"mAP_SignInTitle" = "Sign in to an account";
+
+/* Enter your first name.\n */
+"mAP_signUpError01" = "Enter your first name\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Enter your last name.\n */
+"mAP_signUpError02" = "Enter your last name\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* First and Last name match each other. This seems like a spam, please change Last or First name.\n */
+"mAP_signUpError03" = "First and Last name match each other. This seems like a spam, please change Last or First name\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter correct email address.\n */
+"mAP_signUpError04" = "Email address is invalid. Please try again\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter a password that at least 4 characters long.\n */
+"mAP_signUpError05" = "Password must be at least 4 characters long\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Passwords don't match.\n */
+"mAP_signUpError06" = "Passwords don't match\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mAP_signUpError07" = "This email is in use. Please use another email address";
+
+/* Registration error. */
+"mAP_signUpError08" = "All fields are required";
+
+/* OK */
+"mAP_signUpErrorAlertOkButtonTitle" = "OK";
+
+/* Connection with Twitter failed! */
+"mAP_twitterFailed" = "Connection with Twitter failed!";
+
+/* The message has been posted to your Twitter account. */
+"mAP_twitterPosted" = "The message has been posted to your Twitter account";
+
+/* --- module BarCode Scanner strings --- */
+
+/* Requires a camera to take pictures */
+"mBC_noCameraErrorAlertMessage" = "Requires a camera to take pictures";
+
+/* OK */
+"mBC_noCameraErrorAlertOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mBC_noCameraErrorAlertTitle" = "No Camera Available";
+
+/* Open in a browser */
+"mBC_openInBrowser" = "Open in a browser";
+
+/* Cancel */
+"mBC_shareCancel" = "Cancel";
+
+/* Share via EMail */
+"mBC_shareEmail" = "Share via EMail";
+
+/* Scanned QR-code from iPhone / iBuildApp */
+"mBC_shareEmailSubject" = "Scanned QR-code from iPhone / iBuildApp";
+
+/* Share via SMS */
+"mBC_shareSMS" = "Share via SMS";
+
+/* Web search */
+"mBC_webSearch" = "Web search";
+
+/* --- module Coupons strings --- */
+
+/* can't download rss feed */
+"mC_errorLoadingRSSAlertMessage" = "Can't download RSS feed";
+
+/* OK */
+"mC_errorLoadingRSSAlertOkButton" = "OK";
+
+/* error loading */
+"mC_errorLoadingRSSAlertTitle" = "Error loading";
+
+/* Exp.date %@ */
+"mC_expDateString" = "Exp.date";
+
+/* Coupons */
+"mC_pageTitle" = "Coupons";
+
+/* Read more... */
+"mC_readMoreLink" = "Read more...";
+
+/* --- module Calculator strings --- */
+
+/* maxValue */
+"mCalc_maxValue" = "maxValue";
+
+/* minValue */
+"mCalc_minValue" = "minValue";
+
+/* Result: */
+"mCalc_resultLabel" = "Result:";
+
+/* --- module CustomForm strings --- */
+
+/* Send */
+"mCF_sendButton" = "Send";
+
+/* NO */
+"mCF_switchOff" = "NO";
+
+/* YES */
+"mCF_switchOn" = "YES";
+
+/* --- module Events strings --- */
+
+/* Add Event to Calendar */
+"mE_addContactButton" = "Add Event to Calendar";
+
+/* Added %d notifications */
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"mE_addedMessage%@##{one}" = "Added one notification";
+"mE_addedMessage%@##{other}" = "Added %@ notifications";
+/* Pluralized strings */
+
+/* OK */
+"mE_addedOkButtonTitle" = "OK";
+
+/* Adding to calendar is disabled */
+"mE_addingEventDisabledMessage" = "Adding to calendar is disabled";
+
+/* Event already exists. */
+"mE_addingEventExistMessage" = "Event already exists.";
+
+/* The event '%@' has been successfully added to your calendar */
+"mE_addingEventSuccessMessage" = "The event '%@' has been successfully added to your calendar"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* Cancel */
+"mE_addShareCancelButton" = "Cancel";
+
+/* Share Event via Email */
+"mE_addShareEmailButton" = "Share Event via Email";
+
+/* Share Event via SMS */
+"mE_addShareSMSButton" = "Share Event via SMS";
+
+/* in */
+"mE_in" = "in";
+
+/* Event info */
+"mE_messageSubject" = "Event info";
+
+/* Do you want to add notifications? */
+"mE_notifyAddMessage" = "Do you want to add notifications?";
+
+/* No */
+"mE_notifyAddNoButton" = "No";
+
+/* Yes */
+"mE_notifyAddYesButton" = "Yes";
+
+/* new notifications */
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+"mE_notifyCount%@##{one}" = "One new notification";
+"mE_notifyCount%@##{other}" = "%@ new notification";
+/* Pluralized strings */
+
+/* Events */
+"mE_pageTitle" = "Events";
+
+/* read more */
+"mE_readMoreString" = "read more";
+
+/* I just found a useful event: */
+"mE_shareMessage" = "I just found a useful event:";
+
+/* OK */
+"mE_showMessageOkButtonTitle" = "OK";
+
+/* Event */
+"mE_showMessageTitle" = "Event";
+
+/* View Details */
+"mE_viewDetails" = "View Details";
+
+/* --- module eCommerce strings --- */
+
+/* Back */
+"mEC_backButton" = "Back";
+
+/* BUY */
+"mEC_buyButton" = "BUY";
+
+/* Failed to download. Please retry later */
+"mEC_downloadFailedMessage" = "Failed to download. Please retry later";
+
+/* OK */
+"mEC_downloadFailedOkButtonTitle" = "OK";
+
+/* Download Failed */
+"mEC_downloadFailedTitle" = "Download Failed";
+
+/* Downloading */
+"mEC_downloadingMessage" = "Downloading";
+
+/* There was a problem displaying product in iTunes */
+"mEC_iTunesProblemMessage" = "There was a problem displaying product in iTunes";
+
+/* Ok */
+"mEC_iTunesProblemOkButtonTitle" = "Ok";
+
+/* In-app purchases are not allowed.\r\nPlease upgrade to iOS 6 or later */
+"mEC_Message" = "In-app purchases are not allowed.\r\nPlease upgrade to iOS 6 or later"; // symbols \r and \n are needed for correct string generation, please don't remove!
+
+/* No name */
+"mEC_noNameString" = "No name";
+
+/* Open */
+"mEC_openTitle" = "Open";
+
+/* OK */
+"mEC_purchaseNotAllowedOkButtonTitle" = "OK";
+
+/* Purchase */
+"mEC_purchaseNotAllowedTitle" = "Purchase";
+
+/* Product successfully purchased. Downloading content is available only in iOS6.0 or later version */
+"mEC_purchaseSuccessMessage" = "Product successfully purchased. Downloading content is available only in iOS6.0 or later version";
+
+/* OK */
+"mEC_purchaseSuccessOkButtonTitle" = "OK";
+
+/* Restore */
+"mEC_restoreButtonTitle" = "Restore";
+
+/* In-app purchases are not allowed */
+"mEC_transactionFailedMessage" = "In-app purchases are not allowed";
+
+/* OK */
+"mEC_transactionFailedOkButtonTitle" = "OK";
+
+/* Purchase */
+"mEC_transactionFailedTitle" = "Purchase";
+
+/* View */
+"mEC_viewTitle" = "View";
+
+/* --- module eMail strings --- */
+
+/* Sending Failed - Unknown Error */
+"mEM_sendingErrorMessage" = "Sending Failed - Unknown Error";
+
+/* Email */
+"mEM_sendingErrorTitle" = "Email";
+
+/* OK */
+"mEM_sendingSErrorOkButton" = "OK";
+
+/* Thank You - your information has been sent */
+"mEM_sendingSuccessMessage" = "Thank You - your information has been sent";
+
+/* OK */
+"mEM_sendingSuccessOkButton" = "OK";
+
+/* Sent from */
+"mEM_sentFrom" = "Sent from";
+
+/* --- module FanWall strings --- */
+
+/* Back */
+"mFW_backButtonTitle" = "Back";
+
+/* Photos */
+"mFW_backToPhotosButtonTitle" = "Photos";
+
+/* Replies */
+"mFW_backToRepliesPageButtonTitle" = "Replies";
+
+/* Wall */
+"mFW_backToWallButtonTitle" = "Wall";
+
+/* You haven't enough permissions to create comment here! */
+"mFW_cantCommentAlertMessage" = "You haven't enough permissions to create comment here!";
+
+/* OK */
+"mFW_cantCommentAlertOkButtonTitle" = "OK";
+
+/* Choose Existing Photo */
+"mFW_choosePhotoButtomTitle" = "Choose Existing Photo";
+
+/* Clear */
+"mFW_clearButtonTitle" = "Clear";
+
+/* Comments */
+"mFW_commentsPageTitle" = "Comments";
+
+/* Create New Account */
+"mFW_CreateNewAccount" = "Create New Account";
+
+/* Delete */
+"mFW_deleteButtonTitle" = "Delete";
+
+/* Email */
+"mFW_emailFieldPlaceholder" = "Email";
+
+/* I have an account */
+"mFW_HaveAnAccount" = "I have an account";
+
+/* Turn on Location Services to get coordinates */
+"mFW_locationOffAlertMessage" = "Turn on Location Services to get coordinates";
+
+/* OK */
+"mFW_locationOffAlertOkButtonTitle" = "OK";
+
+/* Location Services is Turned off */
+"mFW_locationOffAlertTitle" = "Location Services is Turned off";
+
+/* Login */
+"mFW_loginButtonTitle" = "Login";
+
+/* Make sure you've entered correct email address and password (min 4 symbols) */
+"mFW_loginError01" = "Make sure you've entered correct email address and password (min 4 symbols)";
+
+/* The username and password did not match\nour records, please try again */
+"mFW_loginError03" = "The username and password did not match\nour records, please try again"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mFW_loginError03_mailInUse" = "This email is in use. Please use another email.";
+
+/* Registration error. */
+"mFW_loginError03_registrationError" = "Registration error.";
+
+/* Passwords don't match.\n */
+"mFW_loginError06" = "Passwords don't match.\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* OK */
+"mFW_loginErrorAlertOkButtonTitle" = "OK";
+
+/* Login with Facebook */
+"mFW_loginFacebookButtonTitle" = "Login with Facebook";
+
+/* Email */
+"mFW_loginPageTitle" = "Email";
+
+/* Login */
+"mFW_LoginTitle" = "Login";
+
+/* Login with Twitter */
+"mFW_loginTwitterButtonTitle" = "Login with Twitter";
+
+/* OK */
+"mFW_mailInUseOkButtonTitle" = "OK";
+
+/* Map */
+"mFW_mapTabTitle" = "Map";
+
+/* Near me */
+"mFW_nearMeTabTitle" = "Near me";
+
+/* Requires a camera to take pictures */
+"mFW_noCameraMessage" = "Requires a camera to take pictures";
+
+/* OK */
+"mFW_noCameraOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mFW_noCameraTitle" = "No Camera Available";
+
+/* No messages yet */
+"mFW_noMessageString" = "No messages yet";
+
+/* There are not messages yet. */
+"mFW_noMessagesYetString" = "There are not messages yet.";
+
+/* or */
+"mFW_Or" = "or";
+
+/* Password */
+"mFW_passwordFieldPlaceholder" = "Password";
+
+/* Cancel */
+"mFW_photoCancelButtomTitle" = "Cancel";
+
+/* Photos */
+"mFW_photosTabTitle" = "Photos";
+
+/* Post */
+"mFW_postButtonTitle" = "Post";
+
+/* Post your comment! */
+"mFW_postCommentButtonTitle" = "Post your comment!";
+
+/* Posted by  */
+"mFW_postedByPhotoCaption" = "Posted by ";
+
+/* Sending failed. Please try again */
+"mFW_postMessageFailedAlertMessage" = "Sending failed. Please try again";
+
+/* OK */
+"mFW_postMessageFailedAlertOkButtonTitle" = "OK";
+
+/* Post a reply! */
+"mFW_postReplyButtonTitle" = "Post a reply!";
+
+/* Facebook */
+"mFW_profileFacebookButtonTitle" = "Facebook";
+
+/* iBuildApp */
+"mFW_profileiBuildAppButtonTitle" = "iBuildApp";
+
+/* Twitter */
+"mFW_profileTwitterButtonTitle" = "Twitter";
+
+/* Recent */
+"mFW_recentTabTitle" = "Recent";
+
+/* Replies */
+"mFW_repliesPageTitle" = "Replies";
+
+/* Send Message */
+"mFW_sendMessageButtonTitle" = "Send Message";
+
+/* Confirm Password */
+"mFW_signUp_confirmPasswordPlaceholder" = "Confirm Password";
+
+/* Email */
+"mFW_signUp_emailPlaceholder" = "Email";
+
+/* First name */
+"mFW_signUp_firstNamePlaceholder" = "First name";
+
+/* Last name */
+"mFW_signUp_lastNamePlaceholder" = "Last name";
+
+/* Password */
+"mFW_signUp_passwordPlaceholder" = "Password";
+
+/* Sign Up */
+"mFW_signupButtonTitle" = "Sign Up";
+
+/* Please enter correct email address.\n */
+"mFW_signUpError04" = "Please enter correct email address.\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* Please enter a password that at least 4 characters long.\n */
+"mFW_signUpError05" = "Please enter a password that at least 4 characters long.\n"; // symbols \n are needed for correct string generation, please don't remove!
+
+/* This email is in use. Please use another email. */
+"mFW_signUpError07" = "This email is in use. Please use another email.";
+
+/* Registration error. */
+"mFW_signUpError08" = "Registration error.";
+
+/* OK */
+"mFW_signUpErrorAlertOkButtonTitle" = "OK";
+
+/* Sign Up */
+"mFW_signupPageTitle" = "Sign Up";
+
+/* Take Photo */
+"mFW_takePhotoButtomTitle" = "Take Photo";
+
+/* Turn on location services to allow app to determine your locations */
+"mFW_turnOnLocationAlertMessage" = "Turn on location services to allow app to determine your locations";
+
+/* OK */
+"mFW_turnOnLocationAlertOkButtonTitle" = "OK";
+
+/* Wall */
+"mFW_wallTabTitle" = "Wall";
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+"mFW_proflie_%@ posts##{one}" = "%@ post";
+"mFW_proflie_%@ posts##{other}" = "%@ posts";
+"mFW_proflie_%@ comments##{one}" = "%@ comment";
+"mFW_proflie_%@ comments##{other}" = "%@ comments";
+/* Pluralized strings */
+
+
+/* --- module MultiContacts strings --- */
+
+/* Search by contact info */
+"mMC_searchBarplaceholder" = "Search by contact info";
+
+/* Add Contact to Address Book */
+"mMC_addContactButton" = "Add Contact to Address Book";
+
+/* Address */
+"mMC_addressPageTitle" = "Address";
+
+/* Cancel */
+"mMC_addShareCancelButton" = "Cancel";
+
+/* Share Contact via Email */
+"mMC_addShareEmailButton" = "Share Contact via Email";
+
+/* Share Contact via SMS */
+"mMC_addShareSMSButton" = "Share Contact via SMS";
+
+/* Address */
+"mMC_detailsTitle" = "Address";
+
+/* Can not add contact without phone number! */
+"mMC_emptyPhoneNumberAddMessage" = "Can not add contact without phone number!";
+
+/* OK */
+"mMC_emptyPhoneNumberAddOkButtonTitle" = "OK";
+
+/* Error! */
+"mMC_emptyPhoneNumberAddTitle" = "Error!";
+
+/* Empty phone number! */
+"mMC_emptyPhoneNumberCallMessage" = "Empty phone number!";
+
+/* OK */
+"mMC_emptyPhoneNumberCallOkButtonTitle" = "OK";
+
+/* Error! */
+"mMC_emptyPhoneNumberCallTitle" = "Error!";
+
+/* Homepage */
+"mMC_homePageTitle" = "Homepage";
+
+/* Address */
+"mMC_messageAddressString" = "Address";
+
+/* Email */
+"mMC_messageEmailString" = "Email";
+
+/* Homepage */
+"mMC_messageHomepageString" = "Homepage";
+
+/* Name */
+"mMC_messageNameString" = "Name";
+
+/* Phone */
+"mMC_messagePhoneString" = "Phone";
+
+/* Contact info */
+"mMC_messageSubject" = "Contact info";
+
+/* Add to Contacts */
+"mMC_selectActionAdd" = "Add to Contacts";
+
+/* Call */
+"mMC_selectActionCall" = "Call";
+
+/* Cancel */
+"mMC_selectActionCancel" = "Cancel";
+
+
+
+/* --- module PDF Reader strings --- */
+
+/* Done */
+"mPDF_doneButtonTitle" = "Done";
+
+
+/* --- module RSS / News strings --- */
+
+/* Cannot load RSS feed */
+"mRSS_errorLoadingRSSMessage" = "Cannot load RSS feed";
+
+/* OK */
+"mRSS_errorLoadingRSSOkButtonTitle" = "OK";
+
+/* Error */
+"mRSS_errorLoadingRSSTitle" = "Error";
+
+/* Play media */
+"mRSS_playMediaLink" = "Play media";
+
+/* Read more... */
+"mRSS_readMoreLink" = "Read more...";
+
+/* Cancel */
+"mRSS_shareCancel" = "Cancel";
+
+/* Share via EMail */
+"mRSS_shareEmail" = "Share via EMail";
+
+/* Share via SMS */
+"mRSS_shareSMS" = "Share via SMS";
+
+/* Excellent news */
+"mRSS_sharingEmailSubject" = "Excellent news";
+
+/* I just read excellent news! */
+"mRSS_sharingMessage" = "I just read excellent news!";
+
+/* --- module RSS Collector strings --- */
+
+/* Add Content */
+"mRSSC_Add Content" = "Add Content";
+
+/* Added */
+"mRSSC_Added" = "Added";
+
+/* Cancel */
+"mRSSC_Cancel" = "Cancel";
+
+/* Continue */
+"mRSSC_Continue" = "Continue";
+
+/* default username */
+"mRSSC_default username" = "default username";
+
+/* Do you want to remove */
+"mRSSC_Do you want to remove" = "Do you want to remove";
+
+/* Done */
+"mRSSC_Done" = "Done";
+
+/* Done */
+"mRSSC_doneButtonCaption" = "Done";
+
+/* Edit Page Name */
+"mRSSC_Edit Page Name" = "Edit Page Name";
+
+/* Edit */
+"mRSSC_editButtonCaption" = "Edit";
+
+/* Email hasn't been setup on your iPad. */
+"mRSSC_Email hasn't been setup on your iPad." = "Email hasn't been setup on your iPad.";
+
+/* FACEBOOK */
+"mRSSC_FACEBOOK" = "FACEBOOK";
+
+/* Mail Not Setup */
+"mRSSC_Mail Not Setup" = "Mail Not Setup";
+
+/* No */
+"mRSSC_No" = "No";
+
+/* Read on Web */
+"mRSSC_readOnWebLink" = "Read on Web";
+
+/* Saved */
+"mRSSC_savedPopowerMessage" = "Saved";
+
+/* Select Category */
+"mRSSC_Select Category" = "Select Category";
+
+/* SHARE */
+"mRSSC_SHARE" = "SHARE";
+
+/* SHARE ON */
+"mRSSC_SHARE ON" = "SHARE ON";
+
+/* START READING */
+"mRSSC_START READING" = "START READING";
+
+/* TWITTER */
+"mRSSC_TWITTER" = "TWITTER";
+
+/* Yes */
+"mRSSC_Yes" = "Yes";
+
+/* Your comment here */
+"mRSSC_Your comment here" = "Your comment here";
+
+/* --- module SoundCloud strings --- */
+
+/* Do you wish to play music in background? */
+"mSC_backgroundRequestMessage" = "Do you wish to play music in background?";
+
+/* No */
+"mSC_backgroundRequestMessageNo" = "No";
+
+/* Yes */
+"mSC_backgroundRequestMessageYes" = "Yes";
+
+/* Cannot open media stream */
+"mSC_cannotOpenMediaMessage" = "Cannot open media stream";
+
+/* Ok */
+"mSC_cannotOpenMediaMessageOk" = "Ok";
+
+/* Post */
+"mSC_postPostButtonTitle" = "Post";
+
+/* The message has been posted to your Facebook wall. */
+"mSC_shareFB&TSuccessAlertMessage" = "The message has been posted to your Facebook wall.";
+
+/* OK */
+"mSC_shareFB&TSuccessAlertTitle" = "OK";
+
+/* Share on Facebook */
+"mSC_sharingMessageFacebookTitle" = "Share on Facebook";
+
+/* Share on Twitter */
+"mSC_sharingMessageTwitterTitle" = "Share on Twitter";
+
+/* Connection with Twitter failed! */
+"mSC_twitterFailed" = "Connection with Twitter failed!";
+
+/* The message has been posted to your Twitter account. */
+"mSC_twitterPosted" = "The message has been posted to your Twitter account. ";
+
+/* --- module TakePicture strings --- */
+
+/* Can't save the image! */
+"mTP_errorSavingPhotoMessage" = "Can't save the image!";
+
+/* OK */
+"mTP_errorSavingPhotoOkButtonTitle" = "OK";
+
+/* Error! */
+"mTP_errorSavingPhotoTitle" = "Error!";
+
+/* Requires a camera to take pictures */
+"mTP_noCameraMessage" = "Requires a camera to take pictures";
+
+/* OK */
+"mTP_noCameraOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mTP_noCameraTitle" = "No Camera Available";
+
+/* Post */
+"mTP_postButtonTitle" = "Post";
+
+/* Caption */
+"mTP_postFormTitle" = "Caption";
+
+/* Retake */
+"mTP_retake" = "Retake";
+
+/* Save */
+"mTP_save" = "Save";
+
+/* OK */
+"mTP_sendingEmailErrorAlertOkButtonTitle" = "OK";
+
+/* Error! */
+"mTP_sendingEmailErrorTitle" = "Error!";
+
+/* OK */
+"mTP_sendingEmailSuccessAlertOkButtonTitle" = "OK";
+
+/* New picture from camera */
+"mTP_sharePhotoEmailSubject" = "New picture from camera";
+
+/* The picture has been posted to your Facebook wall. */
+"mTP_sharingFBSuccessAlertMessage" = "The picture has been posted to your Facebook wall.";
+
+/* OK */
+"mTP_sharingFBSuccessAlertMessageOkButtonTitle" = "OK";
+
+/* The picture has been saved to your iPhone. */
+"mTP_successSavingPhotoMessage" = "The picture has been saved to your iPhone.";
+
+/* OK */
+"mTP_successSavingPhotoOkButtonTitle" = "OK";
+
+/* Connection with Twitter failed! */
+"mTP_twitterFailed" = "Connection with Twitter failed!";
+
+/* The message has been posted to your Twitter account. */
+"mTP_twitterPosted" = "The message has been posted to your Twitter account.";
+
+
+/* --- module Twitter strings --- */
+
+/* ago */
+"mTwitter_agoString" = "ago";
+
+
+/* h */
+"mTwitter_timeComponent_hours" = "h";
+
+/* m */
+"mTwitter_timeComponent_minutes" = "m";
+
+/* s */
+"mTwitter_timeComponent_seconds" = "s";
+
+
+/* Direct Message */
+"mTwiter_directMessageTitle" = "Direct Message";
+
+/* Grab image */
+"mTwiter_grabImageActionSheetTitle" = "Grab image";
+
+/* Album */
+"mTwiter_grabImageAlbumButtonTitle" = "Album";
+
+/* Camera */
+"mTwiter_grabImageCameraButtonTitle" = "Camera";
+
+/* Cancel */
+"mTwiter_grabImageCancelButtonTitle" = "Cancel";
+
+/* Posted via iBuildApp http://ibuildapp.com. */
+"mTwiter_messageShowLinkAddition" = "Posted via iBuildApp http://ibuildapp.com.";
+
+/* New Status */
+"mTwiter_newStatusTitle" = "New Status";
+
+/* Requires a camera to take pictures */
+"mTwiter_noCameraAlertMessage" = "Requires a camera to take pictures";
+
+/* OK */
+"mTwiter_noCameraAlertOkButtonTitle" = "OK";
+
+/* No Camera Available */
+"mTwiter_noCameraAlertTitle" = "No Camera Available";
+
+/* Reply */
+"mTwiter_replyTitle" = "Reply";
+
+/* Retweet */
+"mTwiter_retweetTitle" = "Retweet";
+
+/* Connection failed! */
+"mTwitter_conectionFailedMessage" = "Connection failed!";
+
+/* OK */
+"mTwitter_conectionFailedOkButtonTitle" = "OK";
+
+/*  from  */
+"mTwitter_fromString" = " from ";
+
+/* New Status */
+"mTwitter_newStatus" = "Reply";
+
+/* Send */
+"mTwitter_sendButtonTitle" = "Post";
+
+/* I just read in twitter \"%@\"(%@) */
+"mTwitter_SMSBody" = "I just read in twitter \"%@\"(%@)"; // symbols %@ are needed for correct string generation, please don't remove!
+
+/* XML Error */
+"mTwitter_XMLErrorMessage" = "XML Error";
+
+/* OK */
+"mTwitter_XMLErrorOkButtonTitle" = "OK";
+
+
+/* Tweet */
+"mTwitter_TweetPageTitle" = "Tweet";
+
+/* Account */
+"mTwitter_AccountPageTitle" = "Profile";
+
+/* Follow */
+"mTwitter_NavBar_FollowBtn" = "Follow";
+
+
+/* Mail tweet */
+"mTwitter_ShareMenu_MailTweet" = "Mail tweet";
+
+/* Copy a link for a tweet */
+"mTwitter_ShareMenu_CopyLink" = "Copy a link for a tweet";
+
+/* Undo favorite */
+"mTwitter_FavoriteMenu_UndoFavorite" = "Undo favorite";
+
+/* Undo retweet */
+"mTwitter_RetweetMenu_UndoRetweet" = "Undo retweet";
+
+/* Unfollow user */
+"mTwitter_FollowMenu_UnfollowUser" = "Unfollow user";
+
+/* Follow user */
+"mTwitter_FollowMenu_FollowUser" = "Follow user";
+
+
+/* Pluralized strings
+ Plurals Localization according CLDR Version 21 http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html */
+// symbols ##, {}, %@ and modoficators one and other are needed for correct string generation, please don't remove!
+"mTwitterPluralized_TweetDetail_TweetsQty##{one}" = "TWEET";
+"mTwitterPluralized_TweetDetail_TweetsQty##{other}" = "TWEETS";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{one}" = "FOLLOWING";
+"mTwitterPluralized_TweetDetail_FollowingsQty##{other}" = "FOLLOWING";
+"mTwitterPluralized_TweetDetail_FollowersQty##{one}" = "FOLLOWER";
+"mTwitterPluralized_TweetDetail_FollowersQty##{other}" = "FOLLOWERS";
+/* Pluralized strings */
+
+
+/* --- module Web strings --- */
+
+/* Sent from iBuildApp */
+"mWeb_sentFromiBuildApp" = "Sent from iBuildApp";
+
+
+/* --- Login Screen strings --- */
+
+"loginScreen_approveOk" = "Your registration request has been approved";
+"loginScreen_register" = "Register";
+"loginScreen_logIn"= "Log in";
+"loginScreen_name" = "Name";
+"loginScreen_email" = "Email";
+"loginScreen_password" = "Password";
+"loginScreen_confirmPassword" = "Confirm password";
+"loginScreen_rememberMe" = "Remember me";
+"loginScreen_needToRegister" = "Need to register";
+"loginScreen_forgotMyPassword" = "Forgot password?";
+"loginScreen_validationName" = "Please enter user name";
+"loginScreen_validationEmail" = "Enter valid email address";
+"loginScreen_validationPasswordLength" = "Password must be at least 6 symbols";
+"loginScreen_validationPasswordMatch" = "Please enter identical passwords";
+"loginScreen_noInet" = "Please connect to the internet.";
+"loginScreen_loginFail" = "Your log in has failed. Please try again, reset your password or register.";
+"loginScreen_registrationEmailVerificationAndOwnerApproval" = "Your registration is complete. You will get an email with a link to verify your email when your registration is approved.";
+"loginScreen_registrationEmailVerification" = "Your registration is complete. You will get an email with a link to verify your email before using the app.";
+"loginScreen_registrationOwnerApproval" = "Your registration is complete. You will get a notification when your registration is approved.";
+"loginScreen_emailIsBusy" = "That address is already registered with an account";
+"loginScreen_passwordSended" = "Password reset sent to your email.";
+"loginScreen_sendPassword" = "Send";
+"loginScreen_typeEmailForPassword" = "To reset your password, type full email address you used to sign in.";
+
+
+/* --- module Facebook strings --- */
+
+"mFacebook_commentsPageTitle" = "Comments";
+
+/* --- DateTime components --- */
+
+/* h */
+"core_timeComponent_hours" = "h";
+
+/* m */
+"core_timeComponent_minutes" = "m";
+
+/* s */
+"core_timeComponent_seconds" = "s";
 
