@@ -44,8 +44,6 @@
 		37D5E8B51CA5542500C316BC /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D5E8B01CA5542500C316BC /* zbar-helpicons.png */; };
 		37D5E8B61CA5542500C316BC /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D5E8B11CA5542500C316BC /* zbar-samples.png */; };
 		37D5E8B81CA55C6000C316BC /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E8B71CA55C6000C316BC /* libiconv.2.dylib */; };
-		37E26EC11C9A8B89003766E1 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E26EC01C9A8B89003766E1 /* libGoogleAnalyticsServices.a */; };
-		37E71DFF1C9C2F3C000A4423 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E71DFE1C9C2F3C000A4423 /* libFlurryAnalytics.a */; };
 		37E7B5081C98582500565DCF /* Smartling.i18n.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7B5071C98582500565DCF /* Smartling.i18n.framework */; };
 		37EB7DDF1C9DF767001E8E3F /* libtoolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DC88651C9D572D00B15625 /* libtoolbox.a */; };
 		37EB7DE81C9DF87F001E8E3F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EB7DE71C9DF87F001E8E3F /* AVFoundation.framework */; };
@@ -362,15 +360,6 @@
 		37D5E8B11CA5542500C316BC /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		37D5E8B71CA55C6000C316BC /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
 		37DC88591C9D572D00B15625 /* toolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = toolbox.xcodeproj; path = ../../ios_libs/Toolbox/toolbox.xcodeproj; sourceTree = "<group>"; };
-		37E26EBA1C9A8B89003766E1 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		37E26EBB1C9A8B89003766E1 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		37E26EBC1C9A8B89003766E1 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		37E26EBD1C9A8B89003766E1 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		37E26EBE1C9A8B89003766E1 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		37E26EBF1C9A8B89003766E1 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		37E26EC01C9A8B89003766E1 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		37E71DFD1C9C2F3C000A4423 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		37E71DFE1C9C2F3C000A4423 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		37E7B5071C98582500565DCF /* Smartling.i18n.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Smartling.i18n.framework; path = ../ios_libs/Smartling.i18n.framework; sourceTree = "<group>"; };
 		37EB7DE71C9DF87F001E8E3F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		37EB7DE91C9DF8A6001E8E3F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -441,7 +430,6 @@
 				371156871C997DCD00DAE897 /* FacebookSDK.framework in Frameworks */,
 				371155A21C993C5100DAE897 /* libMBProgressHUD.a in Frameworks */,
 				37E7B5081C98582500565DCF /* Smartling.i18n.framework in Frameworks */,
-				37E71DFF1C9C2F3C000A4423 /* libFlurryAnalytics.a in Frameworks */,
 				5E14C64A1C9172CF00FDC937 /* libiBuildAppLib.a in Frameworks */,
 				37B5718C1B95E5D800D85CC3 /* libTBXML.a in Frameworks */,
 				5970543C159DB9D00003BA92 /* __REPLACE_MODULE_NAME__.a in Frameworks */,
@@ -449,7 +437,6 @@
 				77F7612F158B0B80003A4120 /* Foundation.framework in Frameworks */,
 				77F76131158B0B80003A4120 /* CoreGraphics.framework in Frameworks */,
 				37B5716B1B95D03800D85CC3 /* MessageUI.framework in Frameworks */,
-				37E26EC11C9A8B89003766E1 /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,31 +648,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37E26EB91C9A8B89003766E1 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				37E26EBA1C9A8B89003766E1 /* GAI.h */,
-				37E26EBB1C9A8B89003766E1 /* GAIDictionaryBuilder.h */,
-				37E26EBC1C9A8B89003766E1 /* GAIFields.h */,
-				37E26EBD1C9A8B89003766E1 /* GAILogger.h */,
-				37E26EBE1C9A8B89003766E1 /* GAITrackedViewController.h */,
-				37E26EBF1C9A8B89003766E1 /* GAITracker.h */,
-				37E26EC01C9A8B89003766E1 /* libGoogleAnalyticsServices.a */,
-			);
-			name = GoogleAnalytics;
-			path = ../ios_libs/GoogleAnalytics;
-			sourceTree = "<group>";
-		};
-		37E71DFC1C9C2F3C000A4423 /* FlurryAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				37E71DFD1C9C2F3C000A4423 /* Flurry.h */,
-				37E71DFE1C9C2F3C000A4423 /* libFlurryAnalytics.a */,
-			);
-			name = FlurryAnalytics;
-			path = ../ios_libs/FlurryAnalytics;
-			sourceTree = "<group>";
-		};
 		59705435159DB8080003BA92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,8 +723,6 @@
 				377288DD1C9C51D400C802D0 /* libsqlite3.dylib */,
 				377288DB1C9C513100C802D0 /* libsqlite3.0.tbd */,
 				377288D91C9C505300C802D0 /* QuartzCore.framework */,
-				37E71DFC1C9C2F3C000A4423 /* FlurryAnalytics */,
-				37E26EB91C9A8B89003766E1 /* GoogleAnalytics */,
 				371156C01C998E6D00DAE897 /* PayPalMobile */,
 				371156861C997DCD00DAE897 /* FacebookSDK.framework */,
 				37E7B5071C98582500565DCF /* Smartling.i18n.framework */,
@@ -1174,11 +1134,9 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					../ios_libs,
+					../ios_libs/,
 					../ios_libs/FacebookSDK/,
 					../ios_libs/PayPalMobile/,
-					../ios_libs/GoogleAnalytics/,
-					../ios_libs/FlurryAnalytics/,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1195,9 +1153,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					../ios_libs,
-					../ios_libs/FlurryAnalytics/,
 					../ios_libs/PayPalMobile/,
-					../ios_libs/GoogleAnalytics/,
 					../ios_libs/ZBarSDK/,
 				);
 				ONLY_ACTIVE_ARCH = YES;
@@ -1208,7 +1164,7 @@
 				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/customControls/ ../ios_libs/iBuildAppLib/customControls/iphone/ ../ios_libs/iBuildAppLib/customControls/iphone/IBSideBar/ ../ios_libs/iBuildAppLib/Config/ ../ios_libs/iBuildAppLib/nrGridView/ ../ios_libs/iBuildAppLib/layout/ ../ios_libs/iBuildAppLib/layout/uiwidgets/ ../ios_libs/iBuildAppLib/network/";
 			};
 			name = Debug;
 		};
@@ -1221,11 +1177,9 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					../ios_libs,
+					../ios_libs/,
 					../ios_libs/FacebookSDK/,
 					../ios_libs/PayPalMobile/,
-					../ios_libs/GoogleAnalytics/,
-					../ios_libs/FlurryAnalytics/,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1235,9 +1189,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					../ios_libs,
-					../ios_libs/FlurryAnalytics/,
 					../ios_libs/PayPalMobile/,
-					../ios_libs/GoogleAnalytics/,
 					../ios_libs/ZBarSDK/,
 				);
 				ONLY_ACTIVE_ARCH = YES;
@@ -1249,7 +1201,7 @@
 				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/include/ ../ios_libs/GoogleAnalytics/ ../ios_libs/FlurryAnalytics/";
+				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/customControls/ ../ios_libs/iBuildAppLib/customControls/iphone/ ../ios_libs/iBuildAppLib/customControls/iphone/IBSideBar/ ../ios_libs/iBuildAppLib/Config/ ../ios_libs/iBuildAppLib/nrGridView/ ../ios_libs/iBuildAppLib/layout/ ../ios_libs/iBuildAppLib/layout/uiwidgets/ ../ios_libs/iBuildAppLib/network/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

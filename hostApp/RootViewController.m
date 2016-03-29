@@ -3,10 +3,10 @@
 #import "TBXML.h"
 #import "appConfig.h"
 
-#import "iphviewcontrollerlist.h"
 #import "auth_Share.h"
 #import "appbuilderappconfig.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "twitterid.h"
 
 @interface MODULE_VIEW_CONTROLLER : UIViewController <ModuleDataReceiverProtocol>
 + (void)parseXML:(NSValue *)xmlElement withParams:(NSMutableDictionary *)paramsOut;
@@ -16,14 +16,15 @@
 
 - (id)createModuleViewControllerWithParent:(UIViewController *)parent
 {
-   // MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
+   //MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
    //------
    [params setValue:@"AppTitle" forKey:@"title"];
-   [params setValue:@"catalogue" forKey:@"type"];
    [params setValue:@"0" forKey:@"module_id"];
   
-   MODULE_VIEW_CONTROLLER *viewController = (MODULE_VIEW_CONTROLLER *)[RootViewController controllerWithType:[params objectForKey:@"type"]
-                                                                                                   moduleID:[params objectForKey:@"module_id"]];
+   NSString *moduleName = NSStringFromClass([MODULE_VIEW_CONTROLLER class]);
+   MODULE_VIEW_CONTROLLER *viewController = (MODULE_VIEW_CONTROLLER *)[RootViewController createViewControllerWithName:moduleName
+                                                    nibName:nil
+                                                     bundle:nil];
    //------
   
     [viewController setParams:params];
@@ -110,9 +111,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //----- TODO: Right way for Facebook Session in appHost
-    NSString *currentFBAppID = appIBuildAppFacebookAppID();
-    [FBSettings setDefaultAppID:currentFBAppID];
+    //-----
+    [self setupFacebookIDwithIBuildAppBrand:NO];
+    [self setupTwitterIDwithIBuildAppBrand:NO];
     //-----
     [self loadModuleParams];
 
@@ -138,27 +139,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
   [self.navigationController setNavigationBarHidden:YES animated:NO];
-}
-
-// TODO: Method copied from iphpluginmanager.m of ios_core in appBuilder project
-+(UIViewController *)controllerWithType:(NSString *)type
-                               moduleID:(NSString *)moduleID
-{
-  const TIphoneVCdescriptor *vcd = viewControllerByType(type);
-  if ( !vcd )
-    return nil;
-  
-  if ( vcd->className )
-  {    UIViewController *vc = [self createViewControllerWithName:vcd->className
-                                                                         nibName:vcd->nibName
-                                                                          bundle:nil];
-    //[vc setModuleType:type];
-    return vc;
-  }
-  
-  return [self createViewControllerWithName:[moduleID stringByAppendingString:@"ViewController"]
-                                                    nibName:nil
-                                                     bundle:nil];
 }
 
 // TODO: Method copied from iphpluginmanager.m of ios_core in appBuilder project
@@ -189,6 +169,73 @@
     return [[[theModuleClass alloc] initWithNibName:nibName_ bundle:bundle] autorelease];
   }
   return nil;
+}
+
+// TODO: Method copied from iphmainviewcontroller.m of ios_core in appBuilder project
+-(void)setupFacebookIDwithIBuildAppBrand:(BOOL)bBranding {
+  
+  NSString *storedFBAppID = [[NSUserDefaults standardUserDefaults] objectForKey:@"FacebookAppID"];
+  NSString *storedFBAppSecret = [[NSUserDefaults standardUserDefaults] objectForKey:@"FacebookAppSecret"];
+  NSString *currentFBAppID = bBranding? appIBuildAppFacebookAppID(): appUserDefinedFacebookAppID();
+  NSString *currentFBAppSecret = bBranding? appIBuildAppFacebookAppSecret(): appUserDefinedFacebookAppSecret();
+  
+  if ( [currentFBAppID isEqualToString:kUserDefinedPatternFacebookAppID] )
+  {
+    currentFBAppID = appIBuildAppFacebookAppID();
+  }
+  
+  if ( [currentFBAppSecret isEqualToString:kUserDefinedPatternFacebookAppSecret] )
+  {
+    currentFBAppSecret = appIBuildAppFacebookAppSecret();
+  }
+  
+  if ( ![storedFBAppID isEqualToString:currentFBAppID] )
+  {
+    [[NSUserDefaults standardUserDefaults] setObject:currentFBAppID forKey:@"FacebookAppID"];
+  }
+  
+  if ( ![storedFBAppSecret isEqualToString:currentFBAppSecret] )
+  {
+    [[NSUserDefaults standardUserDefaults] setObject:currentFBAppSecret forKey:@"FacebookAppSecret"];
+  }
+  
+  [FBSettings setDefaultAppID:currentFBAppID];
+}
+
+// TODO: Method copied from iphmainviewcontroller.m of ios_core in appBuilder project
+-(void)setupTwitterIDwithIBuildAppBrand:(BOOL)bBranding
+{
+  NSString *storedTwitterOAuthConsumerKey    = [[NSUserDefaults standardUserDefaults] objectForKey:@"twitterOAuthConsumerKey"];
+  NSString *storedTwitterOAuthConsumerSecret = [[NSUserDefaults standardUserDefaults] objectForKey:@"twitterOAuthConsumerSecret"];
+  
+  NSString *currentTwitterOAuthConsumerKey = nil;
+  NSString *currentTwitterOAuthConsumerSecret = nil;
+  
+  if ( bBranding )
+  {
+    currentTwitterOAuthConsumerKey    = appTwitterOAuthConsumerKeyIB();
+    currentTwitterOAuthConsumerSecret = appTwitterOAuthConsumerSecretIB();
+  }else{
+    currentTwitterOAuthConsumerKey    = appTwitterOAuthConsumerKeyUser();
+    currentTwitterOAuthConsumerSecret = appTwitterOAuthConsumerSecretUser();
+  }
+  
+  if ( [currentTwitterOAuthConsumerKey    isEqualToString:kUserDefinedPatternOAuthConsumerKey] ||
+      [currentTwitterOAuthConsumerSecret isEqualToString:kUserDefinedPatternOAuthConsumerSecret] )
+  {
+    currentTwitterOAuthConsumerKey    = appTwitterOAuthConsumerKeyIB();
+    currentTwitterOAuthConsumerSecret = appTwitterOAuthConsumerSecretIB();
+  }
+  
+  if ( ![storedTwitterOAuthConsumerKey    isEqualToString:currentTwitterOAuthConsumerKey] ||
+      ![storedTwitterOAuthConsumerSecret isEqualToString:currentTwitterOAuthConsumerSecret] )
+  {
+    [[NSUserDefaults standardUserDefaults] setObject:currentTwitterOAuthConsumerKey    forKey:@"twitterOAuthConsumerKey"];
+    [[NSUserDefaults standardUserDefaults] setObject:currentTwitterOAuthConsumerSecret forKey:@"twitterOAuthConsumerSecret"];
+  }
+  
+  [TwitterID setConsumerKey:currentTwitterOAuthConsumerKey];
+  [TwitterID setConsumerSecret:currentTwitterOAuthConsumerSecret];
 }
 
 @end
