@@ -19,7 +19,8 @@
    //MODULE_VIEW_CONTROLLER *viewController = [[[MODULE_VIEW_CONTROLLER alloc] init] autorelease];
    //------
    [params setValue:@"AppTitle" forKey:@"title"];
-   [params setValue:@"0" forKey:@"module_id"];
+   [params setValue:appProjectID() forKey:@"app_id"];// auth_Share library requires "app_id" value in params
+   [params setValue:@"0" forKey:@"module_id"]; // catalog works correctly only if params have "module_id" value
   
    NSString *moduleName = NSStringFromClass([MODULE_VIEW_CONTROLLER class]);
    MODULE_VIEW_CONTROLLER *viewController = (MODULE_VIEW_CONTROLLER *)[RootViewController createViewControllerWithName:moduleName
