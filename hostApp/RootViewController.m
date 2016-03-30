@@ -21,8 +21,15 @@
    [params setValue:@"AppTitle" forKey:@"title"];
    [params setValue:appProjectID() forKey:@"app_id"];// auth_Share library requires "app_id" value in params
    [params setValue:@"0" forKey:@"module_id"]; // catalog works correctly only if params have "module_id" value
-  
+
    NSString *moduleName = NSStringFromClass([MODULE_VIEW_CONTROLLER class]);
+  
+   if([moduleName isEqualToString:@"mNewsViewController"])
+   {
+     // News module works correctly if params have "widgetType" value
+     [params setValue:@"news" forKey:@"widgetType"];
+   }
+  
    MODULE_VIEW_CONTROLLER *viewController = (MODULE_VIEW_CONTROLLER *)[RootViewController createViewControllerWithName:moduleName
                                                     nibName:nil
                                                      bundle:nil];
