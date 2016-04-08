@@ -804,11 +804,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				TargetAttributes = {
-					77F76127158B0B80003A4120 = {
-						DevelopmentTeam = 5384YDUCY8;
-					};
-				};
 			};
 			buildConfigurationList = 77F76122158B0B80003A4120 /* Build configuration list for PBXProject "hostApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1161,8 +1156,6 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/customControls/ ../ios_libs/iBuildAppLib/customControls/iphone/ ../ios_libs/iBuildAppLib/customControls/iphone/IBSideBar/ ../ios_libs/iBuildAppLib/Config/ ../ios_libs/iBuildAppLib/nrGridView/ ../ios_libs/iBuildAppLib/layout/ ../ios_libs/iBuildAppLib/layout/uiwidgets/ ../ios_libs/iBuildAppLib/network/";
 			};
@@ -1198,8 +1191,6 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PROVISIONING_PROFILE = "bb961455-11ce-40e9-848a-e38a3502fdfd";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb961455-11ce-40e9-848a-e38a3502fdfd";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../__REPLACE_MODULE_NAME__ ../ios_libs/TBXML/TBXML-Headers/ ../ios_libs/MBProgressHUD/ ../ios_libs/PayPalMobile/ ../ios_libs/ ../ios_libs/auth_Share/ ../ios_libs/FHSTwitterEngine/FHSTwitterEngine/ ../ios_libs/iBuildAppLib/customControls/ ../ios_libs/iBuildAppLib/customControls/iphone/ ../ios_libs/iBuildAppLib/customControls/iphone/IBSideBar/ ../ios_libs/iBuildAppLib/Config/ ../ios_libs/iBuildAppLib/nrGridView/ ../ios_libs/iBuildAppLib/layout/ ../ios_libs/iBuildAppLib/layout/uiwidgets/ ../ios_libs/iBuildAppLib/network/";
 				VALIDATE_PRODUCT = YES;
@@ -1210,6 +1201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
@@ -1218,6 +1210,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1226,6 +1219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostApp/hostApp-Prefix.pch";
 				INFOPLIST_FILE = "hostApp/hostApp-Info.plist";
@@ -1234,6 +1228,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibuildapp.opensource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_STRIP = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
