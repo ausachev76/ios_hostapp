@@ -26,7 +26,7 @@ MODULE_PATH=..
 HOST_APP_REL_PATH=ios_hostApp
 
 LIBS_REPO_NAME=ios_libs
-LIBS_REPO_URL="git@office.solovathost.com:ios/$LIBS_REPO_NAME.git"
+LIBS_REPO_URL="https://github.com/ausachev76/$LIBS_REPO_NAME.git"
 LIBS_PATH="$MODULE_PATH/$LIBS_REPO_NAME"
 
 die() {
